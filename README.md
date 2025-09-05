@@ -249,7 +249,7 @@ month={Hyderabad, India, Apr.}
 
 Please feel free to contact us if you have any questions:
 
-- 👨‍💻 **Ali Mehrabian**: alimehrabian619@{ece.ubc.ca, yahoo.com}
+- 👨‍💻 **Ali Mehrabian**: alimehrabian619@yahoo.com, ali.mehrabian@vectorinstitute.ai
 - 🔗 **Original Repository**: [https://github.com/Ali-Meh619/SAMBA](https://github.com/Ali-Meh619/SAMBA)
 
 ## 🤝 Contributing
