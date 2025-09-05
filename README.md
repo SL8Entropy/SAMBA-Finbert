@@ -244,9 +244,6 @@ month={Hyderabad, India, Apr.}
 **🏛️ Conference**: IEEE ICASSP 2025  
 **👥 Authors**: Ali Mehrabian, Ehsan Hoseinzade, Mahdi Mazloum, Xiaohong Chen
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📞 Contact
 
