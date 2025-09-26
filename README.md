@@ -238,6 +238,7 @@ If you find our paper and code useful, please kindly cite our paper as follows:
 address={Hyderabad, India},
   month={Apr.},
   year={2025}
+}
 ```
 
 **📄 Paper**: "Mamba Meets Financial Markets: A Graph-Mamba Approach for Stock Price Prediction"  
