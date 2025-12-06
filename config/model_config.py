@@ -38,7 +38,7 @@ class TrainingConfig:
     dataset: str = 'STOCK_DATA'
     lag: int = 5
     horizon: int = 1
-    num_nodes: int = 82  # 82 daily stock features as per the paper
+    num_nodes: int = 83  # 82 daily stock features as per the paper
     val_ratio: float = 0.15
     test_ratio: float = 0.15
     

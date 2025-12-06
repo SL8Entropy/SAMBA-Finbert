@@ -15,7 +15,7 @@ def get_paper_config():
     model_args = ModelArgs(
         d_model=32,           # Model dimension
         n_layer=3,            # Number of Mamba layers
-        vocab_size=82,        # 82 daily stock features
+        vocab_size=83,        # 82 daily stock features
         seq_in=5,             # Input sequence length
         seq_out=1,            # Prediction horizon
         d_state=128,          # State dimension
@@ -32,7 +32,7 @@ def get_paper_config():
         dataset='STOCK_DATA',
         lag=5,                # Input sequence length
         horizon=1,            # Prediction horizon
-        num_nodes=82,         # 82 daily stock features
+        num_nodes=83,         # 82 daily stock features
         val_ratio=0.15,       # 15% validation
         test_ratio=0.15,      # 15% test
         input_dim=1,
@@ -44,13 +44,13 @@ def get_paper_config():
         d_in=32,              # Input dimension
         hid=32,               # Hidden dimension
         batch_size=32,        # Batch size
-        epochs=1100,          # Training epochs
+        epochs=200,          # Training epochs
         lr_init=0.001,        # Initial learning rate
         lr_decay=True,        # Learning rate decay
         lr_decay_rate=0.5,    # Decay rate
         lr_decay_step=[40, 70, 100],  # Decay steps
         early_stop=True,      # Early stopping
-        early_stop_patience=200,  # Patience
+        early_stop_patience=20,  # Patience
         grad_norm=False,      # Gradient clipping
         max_grad_norm=5,      # Max gradient norm
         loss_func='mae',      # Loss function
@@ -92,7 +92,7 @@ def get_dataset_info():
                 'features': 82
             }
         ],
-        'total_features': 82,
+        'total_features': 83,
         'time_period': 'January 2010 to November 2023',
         'paper_title': 'Mamba Meets Financial Markets: A Graph-Mamba Approach for Stock Price Prediction',
         'conference': 'IEEE ICASSP 2025',

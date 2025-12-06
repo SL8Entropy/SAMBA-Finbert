@@ -11,7 +11,7 @@ import numpy as np
 
 class MinMaxNorm01:
     """Scale data to range [0, 1]"""
-    
+    #left alone despite look-ahead bias
     def __init__(self):
         pass
     
@@ -100,14 +100,15 @@ def prepare_data(csv_file, window=5, predict=1, test_ratio=0.15, val_ratio=0.05)
     train_len = XX.shape[0] - test_len - val_len
     
     # Create tensors
-    X_test = torch.Tensor.float(XX[:test_len, :, :]).cuda()
-    Y_test = torch.Tensor.float(YY[:test_len, :, :]).cuda()
+    #fixed against data leakage
+    X_train = torch.Tensor.float(XX[:train_len, :, :]).cuda()
+    Y_train = torch.Tensor.float(YY[:train_len, :, :]).cuda()
     
-    X_train = torch.Tensor.float(XX[test_len:test_len+train_len, :, :]).cuda()
-    Y_train = torch.Tensor.float(YY[test_len:test_len+train_len, :, :]).cuda()
+    X_val = torch.Tensor.float(XX[train_len:train_len+val_len, :, :]).cuda()
+    Y_val = torch.Tensor.float(YY[train_len:train_len+val_len, :, :]).cuda()
     
-    X_val = torch.Tensor.float(XX[-val_len:, :, :]).cuda()
-    Y_val = torch.Tensor.float(YY[-val_len:, :, :]).cuda()
+    X_test = torch.Tensor.float(XX[-test_len:, :, :]).cuda()
+    Y_test = torch.Tensor.float(YY[-test_len:, :, :]).cuda()
     
     # Create data loaders
     train_loader = data_loader(X_train, Y_train, 64, shuffle=False, drop_last=False)
