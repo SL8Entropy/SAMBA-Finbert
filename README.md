@@ -133,7 +133,7 @@ SAMBA-Finbert/
 
 ## 📄 Citation
 
-If you use this code in your research, please cite the associated paper:
+If you use this code in your research or find it helpful, please cite the associated paper (currently under review):
 
 ```bibtex
 @article{sambathkumar2025samba,
