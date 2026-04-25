@@ -105,90 +105,35 @@ def All_Metrics(pred, true, mask1, mask2):
 
 
 def pearson_correlation(x, y):
-    """
-    Calculate the Pearson correlation coefficient between two PyTorch tensors.
+    """Safe Time-Series Pearson correlation"""
+    x = x.float().squeeze()
+    y = y.float().squeeze()
     
-    Args:
-        x (torch.Tensor): First input tensor.
-        y (torch.Tensor): Second input tensor.
-    
-    Returns:
-        torch.Tensor: Pearson correlation coefficient.
-    """
-    # Ensure the tensors are of type float32
-    x = x.float()
-    y = y.float()
-    
-    # Compute the mean of each tensor
     mean_x = torch.mean(x)
     mean_y = torch.mean(y)
-    
-    # Compute the deviations from the mean
     dev_x = x - mean_x
     dev_y = y - mean_y
     
-    # Compute the covariance between x and y
-    covariance = torch.sum(dev_x * dev_y)
+    cov = torch.mean(dev_x * dev_y)
+    std_x = torch.std(x)
+    std_y = torch.std(y)
     
-    # Compute the standard deviations of x and y
-    std_x = torch.sqrt(torch.sum(dev_x ** 2))
-    std_y = torch.sqrt(torch.sum(dev_y ** 2))
-    
-    # Compute the Pearson correlation coefficient
-    pearson_corr = covariance / (std_x * std_y)
-    
-    return pearson_corr
+    # Add epsilon to prevent division by zero NaN errors
+    return cov / (std_x * std_y + 1e-8)
 
 
 def rank_tensor(x):
-    """
-    Return the ranks of elements in a tensor.
-    
-    Args:
-        x (torch.Tensor): Input tensor.
-    
-    Returns:
-        torch.Tensor: Ranks of the input tensor elements.
-    """
-    # Get the sorted indices
+    """Safe rank mapping"""
+    x = x.squeeze()
     sorted_indices = torch.argsort(x)
-    
-    # Create an empty tensor to hold the ranks
     ranks = torch.zeros_like(sorted_indices, dtype=torch.float)
-    
-    # Assign ranks based on sorted indices
-    ranks[sorted_indices] = torch.arange(1, len(x) + 1).float()
-    
+    ranks[sorted_indices] = torch.arange(1, len(x) + 1, device=x.device).float()
     return ranks
 
 
 def rank_information_coefficient(x, y):
-    """
-    Calculate the Rank Information Coefficient (RIC) or Spearman's Rank Correlation Coefficient.
-    
-    Args:
-        x (torch.Tensor): First input tensor.
-        y (torch.Tensor): Second input tensor.
-    
-    Returns:
-        torch.Tensor: Rank Information Coefficient (RIC).
-    """
-    # Get the ranks of the elements in x and y
+    """Safe Rank Information Coefficient"""
     rank_x = rank_tensor(x)
     rank_y = rank_tensor(y)
     
-    # Calculate the mean rank for both tensors
-    mean_rank_x = torch.mean(rank_x)
-    mean_rank_y = torch.mean(rank_y)
-    
-    # Calculate the covariance of the rank variables
-    covariance = torch.sum((rank_x - mean_rank_x) * (rank_y - mean_rank_y))
-    
-    # Calculate the standard deviations of the ranks
-    std_rank_x = torch.sqrt(torch.sum((rank_x - mean_rank_x) ** 2))
-    std_rank_y = torch.sqrt(torch.sum((rank_y - mean_rank_y) ** 2))
-    
-    # Calculate the Spearman rank correlation (RIC)
-    ric = covariance / (std_rank_x * std_rank_y)
-    
-    return ric
+    return pearson_correlation(rank_x, rank_y)

@@ -37,13 +37,6 @@ def main():
     model_args, config = get_paper_config()
     dataset_info = get_dataset_info()
 
-    print("🚀 SAMBA: A Graph-Mamba Approach for Stock Price Prediction")
-    print(f"📚 Paper: {dataset_info['paper_title']}")
-    print(f"🏛️  Conference: {dataset_info['conference']}")
-    print(f"👥 Authors: {', '.join(dataset_info['authors'])}")
-    print(f"📊 Expected Features: {dataset_info['total_features']}")
-    print("=" * 70)
-
     # Initialize seed
     init_seed(config.seed)
 
@@ -52,7 +45,7 @@ def main():
     available_datasets = [ds['file'] for ds in dataset_info['datasets']]
 
     # Default dataset
-    dataset_file = 'Dataset/combined_dataframe_NYSE_LLM.csv'
+    dataset_file = 'Dataset/sp500_with_indicators.csv'
 
     # Extract CSV name & seed for output file naming
     csv_name = os.path.splitext(os.path.basename(dataset_file))[0]
@@ -109,9 +102,9 @@ def main():
 
     print_model_parameters(model, only_num=False)
 
-    # Loss
+    # Loss  
     if args.get('loss_func') == 'mask_mae':
-        loss = masked_mae_loss(mmn, mask_value=0.0)
+        loss = masked_mae_loss(mmn, mask_value=None)
     elif args.get('loss_func') == 'mae':
         loss = torch.nn.L1Loss().to(args.get('device'))
     elif args.get('loss_func') == 'mse':
@@ -153,9 +146,9 @@ def main():
     y_p = np.array(y1[:, 0, :].cpu())
     y_t = np.array(y2[:, 0, :].cpu())
 
-    y_p = mmn.inverse_transform(y_p)
-    y_t = mmn.inverse_transform(y_t)
-
+    # Target_Return is at index 0, so we ONLY use the min/max from index 0
+    y_p = y_p * (mmn.max[0] - mmn.min[0]) + mmn.min[0]
+    y_t = y_t * (mmn.max[0] - mmn.min[0]) + mmn.min[0]
     df = pd.read_csv(dataset_file)
 
     lag = config.lag
@@ -196,8 +189,8 @@ def main():
     y_p = torch.tensor(y_p)
     y_t = torch.tensor(y_t)
 
-    return_p = (y_p[1:] - y_p[:-1]) / y_p[:-1]
-    return_t = (y_t[1:] - y_t[:-1]) / y_t[:-1]
+    return_p = y_p
+    return_t = y_t
 
     mae, rmse, _ = All_Metrics(return_p, return_t, None, None)
     IC = pearson_correlation(return_t, return_p)

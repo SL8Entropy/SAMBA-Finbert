@@ -3,19 +3,12 @@ import matplotlib.pyplot as plt
 
 # 1. Configuration: Map filenames to Chart Titles
 files = {
-    'combined_dataframe_DJI.csv': 'Dow Jones Industrial Average (DJI)',
-    'combined_dataframe_NYSE.csv': 'NYSE Composite',
-    'combined_dataframe_IXIC.csv': 'NASDAQ Composite (IXIC)'
+    'sp500_index.csv': 'S&P 500',
 }
 
 # 2. Hard-set Market Events (Crashes/Downturns)
 # You can add "Booms" here by defining the start/end dates and changing the color to green.
 events = [
-    {
-        "name": "2011 Debt Crisis",
-        "start": "2011-07-01", "end": "2011-10-01",
-        "color": "red", "alpha": 0.15
-    },
     {
         "name": "2015-16 Selloff",
         "start": "2015-08-01", "end": "2016-02-15",

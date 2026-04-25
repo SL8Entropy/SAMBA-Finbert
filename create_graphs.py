@@ -5,7 +5,7 @@ import json
 
 # Load the data
 # Replace 'results.json' with your actual filename
-csv = "results\\withoutLLM\\results_combined_dataframe_NYSE_1"
+csv = "results_sp500_with_indicators_llm_3"
 with open(csv+'.json', 'r') as f:
     data = json.load(f)
 

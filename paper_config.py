@@ -15,7 +15,7 @@ def get_paper_config():
     model_args = ModelArgs(
         d_model=32,           # Model dimension
         n_layer=3,            # Number of Mamba layers
-        vocab_size=83,        # 82 daily stock features
+        vocab_size=26,        
         seq_in=5,             # Input sequence length
         seq_out=1,            # Prediction horizon
         d_state=128,          # State dimension
@@ -32,7 +32,7 @@ def get_paper_config():
         dataset='STOCK_DATA',
         lag=5,                # Input sequence length
         horizon=1,            # Prediction horizon
-        num_nodes=83,         # 82 daily stock features
+        num_nodes=26,         
         val_ratio=0.15,       # 15% validation
         test_ratio=0.15,      # 15% test
         input_dim=1,
@@ -48,16 +48,16 @@ def get_paper_config():
         lr_init=0.001,        # Initial learning rate
         lr_decay=True,        # Learning rate decay
         lr_decay_rate=0.5,    # Decay rate
-        lr_decay_step=[40, 70, 100],  # Decay steps
+        lr_decay_step=[30, 60, 90],  # Decay steps
         early_stop=True,      # Early stopping
-        early_stop_patience=20,  # Patience
+        early_stop_patience=30,  # Patience
         grad_norm=False,      # Gradient clipping
         max_grad_norm=5,      # Max gradient norm
         loss_func='mae',      # Loss function
         mae_thresh=None,      # MAE threshold
         mape_thresh=0,        # MAPE threshold
         device='cuda:0',      # Device
-        seed=1,               # Random seed
+        seed=5,               # Random seed
         debug=True,           # Debug mode
         log_step=20,          # Log step
         log_dir='./'          # Log directory
@@ -71,32 +71,25 @@ def get_dataset_info():
     return {
         'datasets': [
             {
-                'name': 'NASDAQ',
-                'file': 'combined_dataframe_IXIC.csv',
-                'description': 'NASDAQ Composite Index',
-                'period': 'January 2010 to November 2023',
-                'features': 82
+                'name': 'S&P500',
+                'file': 'sp500_with_indicators.csv',
+                'description': 'Standard & Poor\'s 500 Index with calculated indicators',
+                'period': '2015-03-06 to 2024-03-04',
+                'features': 26
             },
             {
-                'name': 'NYSE',
-                'file': 'combined_dataframe_NYSE.csv',
-                'description': 'New York Stock Exchange',
-                'period': 'January 2010 to November 2023',
-                'features': 82
+                'name': 'S&P500 with news sentiment',
+                'file': 'sp500_with_indicators_llm.csv',
+                'description': 'Standard & Poor\'s 500 Index with calculated indicators and Finbert derived news sentiment',
+                'period': '2015-03-06 to 2024-03-04',
+                'features': 27
             },
-            {
-                'name': 'DJIA',
-                'file': 'combined_dataframe_DJI.csv',
-                'description': 'Dow Jones Industrial Average',
-                'period': 'January 2010 to November 2023',
-                'features': 82
-            }
         ],
-        'total_features': 83,
-        'time_period': 'January 2010 to November 2023',
-        'paper_title': 'Mamba Meets Financial Markets: A Graph-Mamba Approach for Stock Price Prediction',
-        'conference': 'IEEE ICASSP 2025',
-        'authors': ['Ali Mehrabian', 'Ehsan Hoseinzade', 'Mahdi Mazloum', 'Xiaohong Chen']
+        'total_features': 27,
+        'time_period': '2015-03-06 to 2024-03-04',
+        'paper_title': 'SAMBA-FinBERT: Leveraging News Sentiment as a Feature for Financial Forecasting',
+        'conference': '',
+        'authors': ['Sudharshan Sambathkumar', 'K.Abirami']
     }
 
 
@@ -104,8 +97,6 @@ def print_paper_info():
     """Print information about the paper and datasets"""
     info = get_dataset_info()
     
-    print("=" * 70)
-    print("SAMBA: A Graph-Mamba Approach for Stock Price Prediction")
     print("=" * 70)
     print(f"Paper: {info['paper_title']}")
     print(f"Conference: {info['conference']}")
