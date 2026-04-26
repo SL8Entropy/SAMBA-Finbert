@@ -105,7 +105,6 @@ def All_Metrics(pred, true, mask1, mask2):
 
 
 def pearson_correlation(x, y):
-    """Safe Time-Series Pearson correlation"""
     x = x.float().squeeze()
     y = y.float().squeeze()
     
@@ -115,8 +114,10 @@ def pearson_correlation(x, y):
     dev_y = y - mean_y
     
     cov = torch.mean(dev_x * dev_y)
-    std_x = torch.std(x)
-    std_y = torch.std(y)
+    
+    # FIX: Set unbiased=False so standard deviation divides by N instead of N-1
+    std_x = torch.std(x, unbiased=False)
+    std_y = torch.std(y, unbiased=False)
     
     # Add epsilon to prevent division by zero NaN errors
     return cov / (std_x * std_y + 1e-8)

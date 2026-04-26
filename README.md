@@ -63,7 +63,7 @@ pip install -r requirements.txt
 This project requires two datasets:
 
 * **News Data:** S&P 500 News Headlines (or similar financial news corpus).
-* **Price Data:** OHLCV data for target indices (e.g., NYSE, NASDAQ, DJIA).
+* **Price Data:** OHLCV data for target indices (e.g. S&P 500).
 
 Run the preprocessing script to tokenize news and generate daily sentiment scores:
 
@@ -71,33 +71,20 @@ Run the preprocessing script to tokenize news and generate daily sentiment score
 python scripts/preprocess_finbert.py --input data/raw_news.csv --output data/sentiment_scores.csv
 ```
 
-### 2. Training
+### 2. Training and Testing
 
-To train the model using the Walk-Forward protocol:
+To train and evaluate the models on your dataset:
 
 ```bash
-python train.py \
-    --model samba_finbert \
-    --index NYSE \
-    --epochs 100 \
-    --batch_size 64 \
-    --seed 1
+python main.py --model samba --dataset "Dataset/sp500_with_indicators.csv" --num_features 26 --seed 5
 ```
 
 **Arguments:**
 
-* `--model`: Choose between `samba` (baseline) or `samba_finbert` (hybrid).
-* `--index`: The target market index (e.g., NYSE, IXIC, DJI).
-* `--window_size`: The lookback window for the time series (default: 60 days).
-
-### 3. Evaluation
-
-To run the evaluation script and generate metrics (IC, RIC, RMSE, MAE):
-
-```bash
-python evaluate.py --checkpoint checkpoints/best_model.pth --test_file data/test_set.csv
-```
-
+* `--model`: Choose which model to train: `samba` (proposed model) or `lstm` (baseline). Default is `samba`.
+* `--dataset`: The file path to your target dataset CSV (e.g., `Dataset/sp500_with_indicators.csv`). 
+* `--num_features`: The number of input parameters/features in your dataset. If not provided, it will attempt to default to the dataset's configuration.
+* `--seed`: Random seed for reproducibility. Overrides the default seed in the configuration file.
 ---
 
 ## 📊 Performance Metrics
@@ -116,17 +103,160 @@ Refer to the `results/` directory for detailed logs and generated plots comparin
 ## 📂 Project Structure
 
 ```plaintext
-SAMBA-Finbert/
-├── assets/             # Images and architecture diagrams
-├── data/               # Data storage (ensure you download datasets here)
-├── models/             # PyTorch model definitions
-│   ├── samba_block.py  # Core Mamba architecture
-│   └── fusion.py       # FinBERT integration logic
-├── scripts/            # Utility scripts for preprocessing
-├── train.py            # Main training loop (Walk-Forward)
-├── evaluate.py         # Evaluation and plotting
-├── requirements.txt    # Python dependencies
-└── README.md
+SAMBA-FINBERT/
+|   abc.PNG
+|   main.py
+|   paper_config.py
+|   README.md
+|   requirements.txt
+|   runall.bat
+|   test_system.py
+|
++---config
+|   |   model_config.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           model_config.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|
++---Dataset
+|       analyze_sentiment.py
+|       calculateIndicators.py
+|       create_price_graph.py
+|       daily_sentiment_clean.csv
+|       merge_sentiment_data.py
+|       sp500_headlines_2008_2024.csv
+|       sp500_index.csv
+|       sp500_index_plot.png
+|       sp500_with_indicators.csv
+|       sp500_with_indicators_llm.csv
+|
++---models
+|   |   graph_layers.py
+|   |   lstm.py
+|   |   mamba.py
+|   |   mamba_block.py
+|   |   normalization.py
+|   |   samba.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           graph_layers.cpython-312.pyc
+|           lstm.cpython-312.pyc
+|           mamba.cpython-312.pyc
+|           mamba_block.cpython-312.pyc
+|           normalization.cpython-312.pyc
+|           samba.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|
++---results
+|       create_graphs.py
+|       final_summary_metrics.csv
+|       look.py
+|       results_lstm_sp500_with_indicators_1.json
+|       results_lstm_sp500_with_indicators_1.png
+|       results_lstm_sp500_with_indicators_1.txt
+|       results_lstm_sp500_with_indicators_1_shap_summary.png
+|       results_lstm_sp500_with_indicators_2.json
+|       results_lstm_sp500_with_indicators_2.png
+|       results_lstm_sp500_with_indicators_2.txt
+|       results_lstm_sp500_with_indicators_2_shap_summary.png
+|       results_lstm_sp500_with_indicators_3.json
+|       results_lstm_sp500_with_indicators_3.png
+|       results_lstm_sp500_with_indicators_3.txt
+|       results_lstm_sp500_with_indicators_3_shap_summary.png
+|       results_lstm_sp500_with_indicators_4.json
+|       results_lstm_sp500_with_indicators_4.png
+|       results_lstm_sp500_with_indicators_4.txt
+|       results_lstm_sp500_with_indicators_4_shap_summary.png
+|       results_lstm_sp500_with_indicators_5.json
+|       results_lstm_sp500_with_indicators_5.png
+|       results_lstm_sp500_with_indicators_5.txt
+|       results_lstm_sp500_with_indicators_5_shap_summary.png
+|       results_lstm_sp500_with_indicators_llm_1.json
+|       results_lstm_sp500_with_indicators_llm_1.png
+|       results_lstm_sp500_with_indicators_llm_1.txt
+|       results_lstm_sp500_with_indicators_llm_1_shap_summary.png
+|       results_lstm_sp500_with_indicators_llm_2.json
+|       results_lstm_sp500_with_indicators_llm_2.png
+|       results_lstm_sp500_with_indicators_llm_2.txt
+|       results_lstm_sp500_with_indicators_llm_2_shap_summary.png
+|       results_lstm_sp500_with_indicators_llm_3.json
+|       results_lstm_sp500_with_indicators_llm_3.png
+|       results_lstm_sp500_with_indicators_llm_3.txt
+|       results_lstm_sp500_with_indicators_llm_3_shap_summary.png
+|       results_lstm_sp500_with_indicators_llm_4.json
+|       results_lstm_sp500_with_indicators_llm_4.png
+|       results_lstm_sp500_with_indicators_llm_4.txt
+|       results_lstm_sp500_with_indicators_llm_4_shap_summary.png
+|       results_lstm_sp500_with_indicators_llm_5.json
+|       results_lstm_sp500_with_indicators_llm_5.png
+|       results_lstm_sp500_with_indicators_llm_5.txt
+|       results_lstm_sp500_with_indicators_llm_5_shap_summary.png
+|       results_samba_sp500_with_indicators_1.json
+|       results_samba_sp500_with_indicators_1.png
+|       results_samba_sp500_with_indicators_1.txt
+|       results_samba_sp500_with_indicators_1_shap_summary.png
+|       results_samba_sp500_with_indicators_2.json
+|       results_samba_sp500_with_indicators_2.png
+|       results_samba_sp500_with_indicators_2.txt
+|       results_samba_sp500_with_indicators_2_shap_summary.png
+|       results_samba_sp500_with_indicators_3.json
+|       results_samba_sp500_with_indicators_3.png
+|       results_samba_sp500_with_indicators_3.txt
+|       results_samba_sp500_with_indicators_3_shap_summary.png
+|       results_samba_sp500_with_indicators_4.json
+|       results_samba_sp500_with_indicators_4.png
+|       results_samba_sp500_with_indicators_4.txt
+|       results_samba_sp500_with_indicators_4_shap_summary.png
+|       results_samba_sp500_with_indicators_5.json
+|       results_samba_sp500_with_indicators_5.png
+|       results_samba_sp500_with_indicators_5.txt
+|       results_samba_sp500_with_indicators_5_shap_summary.png
+|       results_samba_sp500_with_indicators_llm_1.json
+|       results_samba_sp500_with_indicators_llm_1.png
+|       results_samba_sp500_with_indicators_llm_1.txt
+|       results_samba_sp500_with_indicators_llm_1_shap_summary.png
+|       results_samba_sp500_with_indicators_llm_2.json
+|       results_samba_sp500_with_indicators_llm_2.png
+|       results_samba_sp500_with_indicators_llm_2.txt
+|       results_samba_sp500_with_indicators_llm_2_shap_summary.png
+|       results_samba_sp500_with_indicators_llm_3.json
+|       results_samba_sp500_with_indicators_llm_3.png
+|       results_samba_sp500_with_indicators_llm_3.txt
+|       results_samba_sp500_with_indicators_llm_3_shap_summary.png
+|       results_samba_sp500_with_indicators_llm_4.json
+|       results_samba_sp500_with_indicators_llm_4.png
+|       results_samba_sp500_with_indicators_llm_4.txt
+|       results_samba_sp500_with_indicators_llm_4_shap_summary.png
+|       results_samba_sp500_with_indicators_llm_5.json
+|       results_samba_sp500_with_indicators_llm_5.png
+|       results_samba_sp500_with_indicators_llm_5.txt
+|       results_samba_sp500_with_indicators_llm_5_shap_summary.png
+|
++---trainer
+|   |   trainer.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           trainer.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|
++---utils
+|   |   data_utils.py
+|   |   logger.py
+|   |   metrics.py
+|   |   model_utils.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           data_utils.cpython-312.pyc
+|           logger.cpython-312.pyc
+|           metrics.cpython-312.pyc
+|           model_utils.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|
 ```
 
 ---

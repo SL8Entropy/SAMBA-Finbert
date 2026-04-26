@@ -1,0 +1,2024 @@
+[
+    {
+        "date": "2022-10-28",
+        "price": 3901.06,
+        "predicted_return": -1.0423520803451538,
+        "actual_return": -5.0486531257629395
+    },
+    {
+        "date": "2022-10-31",
+        "price": 3871.98,
+        "predicted_return": 25.799442291259766,
+        "actual_return": -1.302699327468872
+    },
+    {
+        "date": "2022-11-01",
+        "price": 3856.1,
+        "predicted_return": -2.974148750305176,
+        "actual_return": -0.4498191475868225
+    },
+    {
+        "date": "2022-11-02",
+        "price": 3759.69,
+        "predicted_return": -0.8494881391525269,
+        "actual_return": 5.096160888671875
+    },
+    {
+        "date": "2022-11-03",
+        "price": 3719.89,
+        "predicted_return": 2.6793763637542725,
+        "actual_return": -0.5765935778617859
+    },
+    {
+        "date": "2022-11-04",
+        "price": 3770.55,
+        "predicted_return": -0.2276579588651657,
+        "actual_return": -2.2864818572998047
+    },
+    {
+        "date": "2022-11-07",
+        "price": 3806.8,
+        "predicted_return": -0.6748496294021606,
+        "actual_return": -0.29405951499938965
+    },
+    {
+        "date": "2022-11-08",
+        "price": 3828.11,
+        "predicted_return": 4.289994716644287,
+        "actual_return": -0.417735755443573
+    },
+    {
+        "date": "2022-11-09",
+        "price": 3748.57,
+        "predicted_return": -0.2821432948112488,
+        "actual_return": -4.711744785308838
+    },
+    {
+        "date": "2022-11-10",
+        "price": 3956.37,
+        "predicted_return": 0.8070070743560791,
+        "actual_return": -3.6679556369781494
+    },
+    {
+        "date": "2022-11-11",
+        "price": 3992.93,
+        "predicted_return": -1.8600398302078247,
+        "actual_return": -0.8333024382591248
+    },
+    {
+        "date": "2022-11-14",
+        "price": 3957.25,
+        "predicted_return": -3.1580264568328857,
+        "actual_return": -1.9669945240020752
+    },
+    {
+        "date": "2022-11-15",
+        "price": 3991.73,
+        "predicted_return": -0.7650263905525208,
+        "actual_return": -1.9750813245773315
+    },
+    {
+        "date": "2022-11-16",
+        "price": 3958.79,
+        "predicted_return": -1.0418918132781982,
+        "actual_return": -1.9470847845077515
+    },
+    {
+        "date": "2022-11-17",
+        "price": 3946.56,
+        "predicted_return": -62.85935974121094,
+        "actual_return": -0.6256295442581177
+    },
+    {
+        "date": "2022-11-18",
+        "price": 3965.34,
+        "predicted_return": -0.9366064667701721,
+        "actual_return": -2.540325164794922
+    },
+    {
+        "date": "2022-11-21",
+        "price": 3949.94,
+        "predicted_return": 4.682398319244385,
+        "actual_return": -1.8161377906799316
+    },
+    {
+        "date": "2022-11-22",
+        "price": 4003.58,
+        "predicted_return": 0.8734439611434937,
+        "actual_return": -4.496695518493652
+    },
+    {
+        "date": "2022-11-23",
+        "price": 4027.26,
+        "predicted_return": -0.6978784799575806,
+        "actual_return": -0.5644532442092896
+    },
+    {
+        "date": "2022-11-25",
+        "price": 4026.12,
+        "predicted_return": 1.7494184970855713,
+        "actual_return": -1.0478599071502686
+    },
+    {
+        "date": "2022-11-28",
+        "price": 3963.94,
+        "predicted_return": 0.18064989149570465,
+        "actual_return": 53.55806350708008
+    },
+    {
+        "date": "2022-11-29",
+        "price": 3957.63,
+        "predicted_return": 0.3610001802444458,
+        "actual_return": -0.8969283699989319
+    },
+    {
+        "date": "2022-11-30",
+        "price": 4080.11,
+        "predicted_return": -0.8742364048957825,
+        "actual_return": -20.441360473632812
+    },
+    {
+        "date": "2022-12-01",
+        "price": 4076.57,
+        "predicted_return": -1.3915907144546509,
+        "actual_return": -1.0280351638793945
+    },
+    {
+        "date": "2022-12-02",
+        "price": 4071.7,
+        "predicted_return": -24.275428771972656,
+        "actual_return": 0.37690532207489014
+    },
+    {
+        "date": "2022-12-05",
+        "price": 3998.84,
+        "predicted_return": -0.6759920120239258,
+        "actual_return": 13.978764533996582
+    },
+    {
+        "date": "2022-12-06",
+        "price": 3941.26,
+        "predicted_return": 1.54353666305542,
+        "actual_return": -0.19531795382499695
+    },
+    {
+        "date": "2022-12-07",
+        "price": 3933.92,
+        "predicted_return": -0.3531422019004822,
+        "actual_return": -0.8706624507904053
+    },
+    {
+        "date": "2022-12-08",
+        "price": 3963.51,
+        "predicted_return": 0.14181458950042725,
+        "actual_return": -5.038837909698486
+    },
+    {
+        "date": "2022-12-09",
+        "price": 3934.38,
+        "predicted_return": -0.07930537313222885,
+        "actual_return": -1.977105736732483
+    },
+    {
+        "date": "2022-12-12",
+        "price": 3990.56,
+        "predicted_return": 0.5005242824554443,
+        "actual_return": -2.942875385284424
+    },
+    {
+        "date": "2022-12-13",
+        "price": 4019.65,
+        "predicted_return": -0.6697027087211609,
+        "actual_return": -0.4894903600215912
+    },
+    {
+        "date": "2022-12-14",
+        "price": 3995.32,
+        "predicted_return": 1.9647399187088013,
+        "actual_return": -1.8303189277648926
+    },
+    {
+        "date": "2022-12-15",
+        "price": 3895.75,
+        "predicted_return": -0.09704803675413132,
+        "actual_return": 3.117398262023926
+    },
+    {
+        "date": "2022-12-16",
+        "price": 3852.36,
+        "predicted_return": 0.07405052334070206,
+        "actual_return": -0.5530882477760315
+    },
+    {
+        "date": "2022-12-19",
+        "price": 3817.66,
+        "predicted_return": -0.7247185707092285,
+        "actual_return": -0.1912691742181778
+    },
+    {
+        "date": "2022-12-20",
+        "price": 3821.62,
+        "predicted_return": 1.372361660003662,
+        "actual_return": -1.1151574850082397
+    },
+    {
+        "date": "2022-12-21",
+        "price": 3878.44,
+        "predicted_return": -0.7023751139640808,
+        "actual_return": 13.333714485168457
+    },
+    {
+        "date": "2022-12-22",
+        "price": 3822.39,
+        "predicted_return": 0.7206944823265076,
+        "actual_return": -1.9719972610473633
+    },
+    {
+        "date": "2022-12-23",
+        "price": 3844.82,
+        "predicted_return": 2.552889108657837,
+        "actual_return": -1.4060457944869995
+    },
+    {
+        "date": "2022-12-27",
+        "price": 3829.25,
+        "predicted_return": -0.9775443077087402,
+        "actual_return": -1.6901113986968994
+    },
+    {
+        "date": "2022-12-28",
+        "price": 3783.22,
+        "predicted_return": 34.89889144897461,
+        "actual_return": 1.9683475494384766
+    },
+    {
+        "date": "2022-12-29",
+        "price": 3849.28,
+        "predicted_return": -0.16546736657619476,
+        "actual_return": -2.452610969543457
+    },
+    {
+        "date": "2022-12-30",
+        "price": 3839.5,
+        "predicted_return": -1.095503568649292,
+        "actual_return": -1.1455070972442627
+    },
+    {
+        "date": "2023-01-03",
+        "price": 3824.14,
+        "predicted_return": -14.855212211608887,
+        "actual_return": 0.5745469927787781
+    },
+    {
+        "date": "2023-01-04",
+        "price": 3852.97,
+        "predicted_return": -0.7502538561820984,
+        "actual_return": -2.8844900131225586
+    },
+    {
+        "date": "2023-01-05",
+        "price": 3808.1,
+        "predicted_return": 0.23981943726539612,
+        "actual_return": -2.5447206497192383
+    },
+    {
+        "date": "2023-01-06",
+        "price": 3895.08,
+        "predicted_return": 1.7442094087600708,
+        "actual_return": -2.961329221725464
+    },
+    {
+        "date": "2023-01-09",
+        "price": 3892.09,
+        "predicted_return": -1.2569465637207031,
+        "actual_return": -1.033608317375183
+    },
+    {
+        "date": "2023-01-10",
+        "price": 3919.25,
+        "predicted_return": -6.0704216957092285,
+        "actual_return": -10.090506553649902
+    },
+    {
+        "date": "2023-01-11",
+        "price": 3969.61,
+        "predicted_return": -0.85480797290802,
+        "actual_return": 0.841350257396698
+    },
+    {
+        "date": "2023-01-12",
+        "price": 3983.17,
+        "predicted_return": 1.5632990598678589,
+        "actual_return": -0.7341552972793579
+    },
+    {
+        "date": "2023-01-13",
+        "price": 3999.09,
+        "predicted_return": 0.15680186450481415,
+        "actual_return": 0.17004886269569397
+    },
+    {
+        "date": "2023-01-17",
+        "price": 3990.97,
+        "predicted_return": -0.36607950925827026,
+        "actual_return": -1.508021354675293
+    },
+    {
+        "date": "2023-01-18",
+        "price": 3928.86,
+        "predicted_return": 0.6255689859390259,
+        "actual_return": 6.664551734924316
+    },
+    {
+        "date": "2023-01-19",
+        "price": 3898.85,
+        "predicted_return": 0.05802008882164955,
+        "actual_return": -0.5091866850852966
+    },
+    {
+        "date": "2023-01-20",
+        "price": 3972.61,
+        "predicted_return": -0.6693234443664551,
+        "actual_return": -3.476764678955078
+    },
+    {
+        "date": "2023-01-23",
+        "price": 4019.81,
+        "predicted_return": -2.2214879989624023,
+        "actual_return": -0.3719683289527893
+    },
+    {
+        "date": "2023-01-24",
+        "price": 4016.95,
+        "predicted_return": -4.327187538146973,
+        "actual_return": -1.0598819255828857
+    },
+    {
+        "date": "2023-01-25",
+        "price": 4016.22,
+        "predicted_return": 0.03572164475917816,
+        "actual_return": -0.7445572018623352
+    },
+    {
+        "date": "2023-01-26",
+        "price": 4060.43,
+        "predicted_return": -0.5257787704467773,
+        "actual_return": -61.568607330322266
+    },
+    {
+        "date": "2023-01-27",
+        "price": 4070.56,
+        "predicted_return": -0.5034849047660828,
+        "actual_return": -0.7733615636825562
+    },
+    {
+        "date": "2023-01-30",
+        "price": 4017.77,
+        "predicted_return": 2.5468544960021973,
+        "actual_return": -6.198293685913086
+    },
+    {
+        "date": "2023-01-31",
+        "price": 4076.6,
+        "predicted_return": 0.4170990586280823,
+        "actual_return": -2.1290581226348877
+    },
+    {
+        "date": "2023-02-01",
+        "price": 4119.21,
+        "predicted_return": -1.1096124649047852,
+        "actual_return": -0.2861623466014862
+    },
+    {
+        "date": "2023-02-02",
+        "price": 4179.76,
+        "predicted_return": -7.430251598358154,
+        "actual_return": 0.406328946352005
+    },
+    {
+        "date": "2023-02-03",
+        "price": 4136.48,
+        "predicted_return": -0.7290051579475403,
+        "actual_return": -1.7044272422790527
+    },
+    {
+        "date": "2023-02-06",
+        "price": 4111.08,
+        "predicted_return": 4.61646032333374,
+        "actual_return": -0.4069831073284149
+    },
+    {
+        "date": "2023-02-07",
+        "price": 4164.0,
+        "predicted_return": -0.5688936114311218,
+        "actual_return": -3.0963327884674072
+    },
+    {
+        "date": "2023-02-08",
+        "price": 4117.86,
+        "predicted_return": -0.9392886757850647,
+        "actual_return": -1.8608026504516602
+    },
+    {
+        "date": "2023-02-09",
+        "price": 4081.5,
+        "predicted_return": 54.416500091552734,
+        "actual_return": -0.20313388109207153
+    },
+    {
+        "date": "2023-02-10",
+        "price": 4090.46,
+        "predicted_return": -0.4749912917613983,
+        "actual_return": -1.248618721961975
+    },
+    {
+        "date": "2023-02-13",
+        "price": 4137.29,
+        "predicted_return": -0.003956229891628027,
+        "actual_return": 4.2151384353637695
+    },
+    {
+        "date": "2023-02-14",
+        "price": 4136.13,
+        "predicted_return": -0.4594597816467285,
+        "actual_return": -1.0244897603988647
+    },
+    {
+        "date": "2023-02-15",
+        "price": 4147.6,
+        "predicted_return": 1.1967633962631226,
+        "actual_return": -10.89080810546875
+    },
+    {
+        "date": "2023-02-16",
+        "price": 4090.41,
+        "predicted_return": -0.3177911639213562,
+        "actual_return": -5.972280979156494
+    },
+    {
+        "date": "2023-02-17",
+        "price": 4079.09,
+        "predicted_return": 0.8219847679138184,
+        "actual_return": -0.7992957234382629
+    },
+    {
+        "date": "2023-02-21",
+        "price": 3997.34,
+        "predicted_return": -0.6011728644371033,
+        "actual_return": 6.241766452789307
+    },
+    {
+        "date": "2023-02-22",
+        "price": 3991.05,
+        "predicted_return": 2.24404239654541,
+        "actual_return": -0.9214844703674316
+    },
+    {
+        "date": "2023-02-23",
+        "price": 4012.32,
+        "predicted_return": -0.5302377939224243,
+        "actual_return": -4.386878490447998
+    },
+    {
+        "date": "2023-02-24",
+        "price": 3970.04,
+        "predicted_return": 0.3212914764881134,
+        "actual_return": -2.977243185043335
+    },
+    {
+        "date": "2023-02-27",
+        "price": 3982.24,
+        "predicted_return": -0.020561544224619865,
+        "actual_return": -1.2916251420974731
+    },
+    {
+        "date": "2023-02-28",
+        "price": 3970.15,
+        "predicted_return": -0.7644668221473694,
+        "actual_return": -1.987950086593628
+    },
+    {
+        "date": "2023-03-01",
+        "price": 3951.39,
+        "predicted_return": 3.627608299255371,
+        "actual_return": 0.5564207434654236
+    },
+    {
+        "date": "2023-03-02",
+        "price": 3981.35,
+        "predicted_return": -0.42759808897972107,
+        "actual_return": -2.6045916080474854
+    },
+    {
+        "date": "2023-03-03",
+        "price": 4045.64,
+        "predicted_return": -0.4951103925704956,
+        "actual_return": 1.1297177076339722
+    },
+    {
+        "date": "2023-03-06",
+        "price": 4048.42,
+        "predicted_return": 0.6152252554893494,
+        "actual_return": -0.9574456214904785
+    },
+    {
+        "date": "2023-03-07",
+        "price": 3986.37,
+        "predicted_return": 0.6448603868484497,
+        "actual_return": -23.30481719970703
+    },
+    {
+        "date": "2023-03-08",
+        "price": 3992.01,
+        "predicted_return": -0.2142072170972824,
+        "actual_return": -1.0923092365264893
+    },
+    {
+        "date": "2023-03-09",
+        "price": 3918.32,
+        "predicted_return": -1.1630127429962158,
+        "actual_return": -14.047152519226074
+    },
+    {
+        "date": "2023-03-10",
+        "price": 3861.59,
+        "predicted_return": -12.779817581176758,
+        "actual_return": -0.21567532420158386
+    },
+    {
+        "date": "2023-03-13",
+        "price": 3855.76,
+        "predicted_return": -0.5565013289451599,
+        "actual_return": -0.8957222700119019
+    },
+    {
+        "date": "2023-03-14",
+        "price": 3919.29,
+        "predicted_return": 0.26608046889305115,
+        "actual_return": -11.913504600524902
+    },
+    {
+        "date": "2023-03-15",
+        "price": 3891.93,
+        "predicted_return": -0.6372878551483154,
+        "actual_return": -1.423682451248169
+    },
+    {
+        "date": "2023-03-16",
+        "price": 3960.28,
+        "predicted_return": 3.5019032955169678,
+        "actual_return": -3.5157296657562256
+    },
+    {
+        "date": "2023-03-17",
+        "price": 3916.64,
+        "predicted_return": -1.1832863092422485,
+        "actual_return": -1.6274597644805908
+    },
+    {
+        "date": "2023-03-20",
+        "price": 3951.57,
+        "predicted_return": -8.760822296142578,
+        "actual_return": -1.8093303442001343
+    },
+    {
+        "date": "2023-03-21",
+        "price": 4002.87,
+        "predicted_return": -0.9474768042564392,
+        "actual_return": 0.4556684195995331
+    },
+    {
+        "date": "2023-03-22",
+        "price": 3936.97,
+        "predicted_return": 3.3818016052246094,
+        "actual_return": -2.2681381702423096
+    },
+    {
+        "date": "2023-03-23",
+        "price": 3948.72,
+        "predicted_return": 3.499974012374878,
+        "actual_return": -1.1812846660614014
+    },
+    {
+        "date": "2023-03-24",
+        "price": 3970.99,
+        "predicted_return": -1.1994457244873047,
+        "actual_return": 0.8896838426589966
+    },
+    {
+        "date": "2023-03-27",
+        "price": 3977.53,
+        "predicted_return": -2.201639413833618,
+        "actual_return": -0.7079787254333496
+    },
+    {
+        "date": "2023-03-28",
+        "price": 3971.27,
+        "predicted_return": 0.4109337329864502,
+        "actual_return": -1.9556161165237427
+    },
+    {
+        "date": "2023-03-29",
+        "price": 4027.81,
+        "predicted_return": 0.003188862930983305,
+        "actual_return": -10.046156883239746
+    },
+    {
+        "date": "2023-03-30",
+        "price": 4050.83,
+        "predicted_return": -0.843661367893219,
+        "actual_return": -0.598570704460144
+    },
+    {
+        "date": "2023-03-31",
+        "price": 4109.31,
+        "predicted_return": 8.366090774536133,
+        "actual_return": 1.525968313217163
+    },
+    {
+        "date": "2023-04-03",
+        "price": 4124.51,
+        "predicted_return": -0.7120832204818726,
+        "actual_return": -0.7437810897827148
+    },
+    {
+        "date": "2023-04-04",
+        "price": 4100.6,
+        "predicted_return": 1.8725121021270752,
+        "actual_return": -2.567229986190796
+    },
+    {
+        "date": "2023-04-05",
+        "price": 4090.38,
+        "predicted_return": 0.1185825988650322,
+        "actual_return": -0.5700704455375671
+    },
+    {
+        "date": "2023-04-06",
+        "price": 4105.02,
+        "predicted_return": -0.529502272605896,
+        "actual_return": -2.4360594749450684
+    },
+    {
+        "date": "2023-04-10",
+        "price": 4109.11,
+        "predicted_return": -0.2964552044868469,
+        "actual_return": -0.7216235995292664
+    },
+    {
+        "date": "2023-04-11",
+        "price": 4108.94,
+        "predicted_return": 1.9472140073776245,
+        "actual_return": -1.0415323972702026
+    },
+    {
+        "date": "2023-04-12",
+        "price": 4091.95,
+        "predicted_return": -0.031191403046250343,
+        "actual_return": 98.92347717285156
+    },
+    {
+        "date": "2023-04-13",
+        "price": 4146.22,
+        "predicted_return": 0.04161939397454262,
+        "actual_return": -4.20749568939209
+    },
+    {
+        "date": "2023-04-14",
+        "price": 4137.64,
+        "predicted_return": -0.6592298150062561,
+        "actual_return": -1.156029462814331
+    },
+    {
+        "date": "2023-04-17",
+        "price": 4151.32,
+        "predicted_return": 3.6978790760040283,
+        "actual_return": -2.597702980041504
+    },
+    {
+        "date": "2023-04-18",
+        "price": 4154.87,
+        "predicted_return": -0.5179786682128906,
+        "actual_return": -0.7413544654846191
+    },
+    {
+        "date": "2023-04-19",
+        "price": 4154.52,
+        "predicted_return": 0.45100221037864685,
+        "actual_return": -1.0985231399536133
+    },
+    {
+        "date": "2023-04-20",
+        "price": 4129.79,
+        "predicted_return": -0.1717081516981125,
+        "actual_return": 69.65245819091797
+    },
+    {
+        "date": "2023-04-21",
+        "price": 4133.52,
+        "predicted_return": 0.29662024974823,
+        "actual_return": -1.1517326831817627
+    },
+    {
+        "date": "2023-04-24",
+        "price": 4137.04,
+        "predicted_return": -0.363345742225647,
+        "actual_return": -0.05716642737388611
+    },
+    {
+        "date": "2023-04-25",
+        "price": 4071.63,
+        "predicted_return": 0.3639087378978729,
+        "actual_return": -19.566804885864258
+    },
+    {
+        "date": "2023-04-26",
+        "price": 4055.99,
+        "predicted_return": 0.7032178044319153,
+        "actual_return": -0.7570516467094421
+    },
+    {
+        "date": "2023-04-27",
+        "price": 4135.35,
+        "predicted_return": -0.5076845288276672,
+        "actual_return": -6.093733310699463
+    },
+    {
+        "date": "2023-04-28",
+        "price": 4169.48,
+        "predicted_return": -0.31692183017730713,
+        "actual_return": -0.5781883597373962
+    },
+    {
+        "date": "2023-05-01",
+        "price": 4167.87,
+        "predicted_return": 1.175287127494812,
+        "actual_return": -1.0467876195907593
+    },
+    {
+        "date": "2023-05-02",
+        "price": 4119.58,
+        "predicted_return": -0.19946810603141785,
+        "actual_return": 29.00463104248047
+    },
+    {
+        "date": "2023-05-03",
+        "price": 4090.75,
+        "predicted_return": 3.3901124000549316,
+        "actual_return": -0.39598348736763
+    },
+    {
+        "date": "2023-05-04",
+        "price": 4061.22,
+        "predicted_return": -0.2189701795578003,
+        "actual_return": 0.031499188393354416
+    },
+    {
+        "date": "2023-05-05",
+        "price": 4136.25,
+        "predicted_return": 0.17331065237522125,
+        "actual_return": -3.5592801570892334
+    },
+    {
+        "date": "2023-05-08",
+        "price": 4138.12,
+        "predicted_return": -0.20983576774597168,
+        "actual_return": -0.9755286574363708
+    },
+    {
+        "date": "2023-05-09",
+        "price": 4119.17,
+        "predicted_return": 0.43597692251205444,
+        "actual_return": -11.129087448120117
+    },
+    {
+        "date": "2023-05-10",
+        "price": 4137.64,
+        "predicted_return": -0.19358272850513458,
+        "actual_return": -1.9791550636291504
+    },
+    {
+        "date": "2023-05-11",
+        "price": 4130.62,
+        "predicted_return": 0.02745170146226883,
+        "actual_return": -1.378381609916687
+    },
+    {
+        "date": "2023-05-12",
+        "price": 4124.08,
+        "predicted_return": 0.04734005033969879,
+        "actual_return": -0.06679313629865646
+    },
+    {
+        "date": "2023-05-15",
+        "price": 4136.28,
+        "predicted_return": -0.038484834134578705,
+        "actual_return": -2.8683815002441406
+    },
+    {
+        "date": "2023-05-16",
+        "price": 4109.9,
+        "predicted_return": 0.016546333208680153,
+        "actual_return": -3.1559290885925293
+    },
+    {
+        "date": "2023-05-17",
+        "price": 4158.77,
+        "predicted_return": 0.058876246213912964,
+        "actual_return": -2.8644280433654785
+    },
+    {
+        "date": "2023-05-18",
+        "price": 4198.05,
+        "predicted_return": -0.2070833444595337,
+        "actual_return": -0.20567984879016876
+    },
+    {
+        "date": "2023-05-19",
+        "price": 4191.98,
+        "predicted_return": 0.20969481766223907,
+        "actual_return": -1.1530859470367432
+    },
+    {
+        "date": "2023-05-22",
+        "price": 4192.63,
+        "predicted_return": -0.015678727999329567,
+        "actual_return": -1.1072361469268799
+    },
+    {
+        "date": "2023-05-23",
+        "price": 4145.58,
+        "predicted_return": -0.028334932401776314,
+        "actual_return": -73.37528228759766
+    },
+    {
+        "date": "2023-05-24",
+        "price": 4115.24,
+        "predicted_return": 0.04857694357633591,
+        "actual_return": -0.34783580899238586
+    },
+    {
+        "date": "2023-05-25",
+        "price": 4151.28,
+        "predicted_return": -0.05062880367040634,
+        "actual_return": -2.196627140045166
+    },
+    {
+        "date": "2023-05-26",
+        "price": 4205.45,
+        "predicted_return": 0.02674325741827488,
+        "actual_return": 0.49000540375709534
+    },
+    {
+        "date": "2023-05-30",
+        "price": 4205.52,
+        "predicted_return": -0.0293241236358881,
+        "actual_return": -0.9987244606018066
+    },
+    {
+        "date": "2023-05-31",
+        "price": 4179.83,
+        "predicted_return": 0.11652383953332901,
+        "actual_return": -368.0044860839844
+    },
+    {
+        "date": "2023-06-01",
+        "price": 4221.02,
+        "predicted_return": -0.054896991699934006,
+        "actual_return": -2.6132009029388428
+    },
+    {
+        "date": "2023-06-02",
+        "price": 4282.37,
+        "predicted_return": -0.1615738719701767,
+        "actual_return": 0.4749048054218292
+    },
+    {
+        "date": "2023-06-05",
+        "price": 4273.79,
+        "predicted_return": 0.07163115590810776,
+        "actual_return": -1.1378499269485474
+    },
+    {
+        "date": "2023-06-06",
+        "price": 4283.85,
+        "predicted_return": 0.09931869804859161,
+        "actual_return": -2.1748476028442383
+    },
+    {
+        "date": "2023-06-07",
+        "price": 4267.52,
+        "predicted_return": -0.10145303606987,
+        "actual_return": -2.6194510459899902
+    },
+    {
+        "date": "2023-06-08",
+        "price": 4293.93,
+        "predicted_return": 0.059230074286460876,
+        "actual_return": -2.6234524250030518
+    },
+    {
+        "date": "2023-06-09",
+        "price": 4298.86,
+        "predicted_return": -0.16330675780773163,
+        "actual_return": -0.8144771456718445
+    },
+    {
+        "date": "2023-06-12",
+        "price": 4338.93,
+        "predicted_return": 0.2872239053249359,
+        "actual_return": 7.118495464324951
+    },
+    {
+        "date": "2023-06-13",
+        "price": 4369.01,
+        "predicted_return": -0.11286340653896332,
+        "actual_return": -0.25624674558639526
+    },
+    {
+        "date": "2023-06-14",
+        "price": 4372.59,
+        "predicted_return": 0.09453818202018738,
+        "actual_return": -0.8818032741546631
+    },
+    {
+        "date": "2023-06-15",
+        "price": 4425.84,
+        "predicted_return": -0.052748508751392365,
+        "actual_return": 13.862128257751465
+    },
+    {
+        "date": "2023-06-16",
+        "price": 4409.59,
+        "predicted_return": -0.08284763991832733,
+        "actual_return": -1.3014936447143555
+    },
+    {
+        "date": "2023-06-20",
+        "price": 4388.71,
+        "predicted_return": 0.21786944568157196,
+        "actual_return": 0.28965622186660767
+    },
+    {
+        "date": "2023-06-21",
+        "price": 4365.69,
+        "predicted_return": -0.09915588051080704,
+        "actual_return": 0.1077335774898529
+    },
+    {
+        "date": "2023-06-22",
+        "price": 4381.89,
+        "predicted_return": 0.09225628525018692,
+        "actual_return": -1.707445502281189
+    },
+    {
+        "date": "2023-06-23",
+        "price": 4348.33,
+        "predicted_return": -0.1164226308465004,
+        "actual_return": -3.0639517307281494
+    },
+    {
+        "date": "2023-06-26",
+        "price": 4328.82,
+        "predicted_return": 0.2875085473060608,
+        "actual_return": -0.41416630148887634
+    },
+    {
+        "date": "2023-06-27",
+        "price": 4378.41,
+        "predicted_return": -0.0759158730506897,
+        "actual_return": -3.5532259941101074
+    },
+    {
+        "date": "2023-06-28",
+        "price": 4376.86,
+        "predicted_return": -0.023901142179965973,
+        "actual_return": -1.0309027433395386
+    },
+    {
+        "date": "2023-06-29",
+        "price": 4396.44,
+        "predicted_return": 0.05548563599586487,
+        "actual_return": -13.636556625366211
+    },
+    {
+        "date": "2023-06-30",
+        "price": 4450.38,
+        "predicted_return": -0.1148035004734993,
+        "actual_return": 1.7425861358642578
+    },
+    {
+        "date": "2023-07-03",
+        "price": 4455.59,
+        "predicted_return": 0.03247491642832756,
+        "actual_return": -0.9045824408531189
+    },
+    {
+        "date": "2023-07-05",
+        "price": 4446.82,
+        "predicted_return": -0.024371962994337082,
+        "actual_return": -2.681344985961914
+    },
+    {
+        "date": "2023-07-06",
+        "price": 4411.59,
+        "predicted_return": -0.06196514144539833,
+        "actual_return": 3.0250244140625
+    },
+    {
+        "date": "2023-07-07",
+        "price": 4398.95,
+        "predicted_return": 0.087684765458107,
+        "actual_return": -0.6383500099182129
+    },
+    {
+        "date": "2023-07-10",
+        "price": 4409.53,
+        "predicted_return": -0.09614550322294235,
+        "actual_return": -1.8394312858581543
+    },
+    {
+        "date": "2023-07-11",
+        "price": 4439.26,
+        "predicted_return": 0.12345822900533676,
+        "actual_return": 1.8032712936401367
+    },
+    {
+        "date": "2023-07-12",
+        "price": 4472.16,
+        "predicted_return": -0.05070425197482109,
+        "actual_return": 0.09921716898679733
+    },
+    {
+        "date": "2023-07-13",
+        "price": 4510.04,
+        "predicted_return": 0.08142857253551483,
+        "actual_return": 0.14289620518684387
+    },
+    {
+        "date": "2023-07-14",
+        "price": 4505.42,
+        "predicted_return": -0.0698787271976471,
+        "actual_return": -1.1209405660629272
+    },
+    {
+        "date": "2023-07-17",
+        "price": 4522.79,
+        "predicted_return": 0.026507524773478508,
+        "actual_return": -4.7635626792907715
+    },
+    {
+        "date": "2023-07-18",
+        "price": 4554.98,
+        "predicted_return": -0.09496458619832993,
+        "actual_return": 0.8460816144943237
+    },
+    {
+        "date": "2023-07-19",
+        "price": 4565.72,
+        "predicted_return": -0.004175839480012655,
+        "actual_return": -0.6687142848968506
+    },
+    {
+        "date": "2023-07-20",
+        "price": 4534.87,
+        "predicted_return": 0.019740523770451546,
+        "actual_return": -3.8656885623931885
+    },
+    {
+        "date": "2023-07-21",
+        "price": 4536.34,
+        "predicted_return": 0.08525139093399048,
+        "actual_return": -1.047972559928894
+    },
+    {
+        "date": "2023-07-24",
+        "price": 4554.64,
+        "predicted_return": -0.09518428891897202,
+        "actual_return": 11.445295333862305
+    },
+    {
+        "date": "2023-07-25",
+        "price": 4567.46,
+        "predicted_return": 0.06290941685438156,
+        "actual_return": -0.30226707458496094
+    },
+    {
+        "date": "2023-07-26",
+        "price": 4566.75,
+        "predicted_return": 0.02924090437591076,
+        "actual_return": -1.0552300214767456
+    },
+    {
+        "date": "2023-07-27",
+        "price": 4537.41,
+        "predicted_return": 0.08903954178094864,
+        "actual_return": 40.3280143737793
+    },
+    {
+        "date": "2023-07-28",
+        "price": 4582.23,
+        "predicted_return": 0.004875817336142063,
+        "actual_return": -2.5374836921691895
+    },
+    {
+        "date": "2023-07-31",
+        "price": 4588.96,
+        "predicted_return": -0.16159072518348694,
+        "actual_return": -0.8513131141662598
+    },
+    {
+        "date": "2023-08-01",
+        "price": 4576.73,
+        "predicted_return": 0.18946662545204163,
+        "actual_return": -2.8145813941955566
+    },
+    {
+        "date": "2023-08-02",
+        "price": 4513.39,
+        "predicted_return": -0.06487514078617096,
+        "actual_return": 4.1929030418396
+    },
+    {
+        "date": "2023-08-03",
+        "price": 4501.89,
+        "predicted_return": 0.18717655539512634,
+        "actual_return": -0.8158918619155884
+    },
+    {
+        "date": "2023-08-04",
+        "price": 4478.03,
+        "predicted_return": -1.014543056488037,
+        "actual_return": 1.080082654953003
+    },
+    {
+        "date": "2023-08-07",
+        "price": 4518.44,
+        "predicted_return": -12.673585891723633,
+        "actual_return": -2.7026491165161133
+    },
+    {
+        "date": "2023-08-08",
+        "price": 4499.38,
+        "predicted_return": -1.209299087524414,
+        "actual_return": -1.4674484729766846
+    },
+    {
+        "date": "2023-08-09",
+        "price": 4467.71,
+        "predicted_return": -7.338314056396484,
+        "actual_return": 0.6686301827430725
+    },
+    {
+        "date": "2023-08-10",
+        "price": 4468.83,
+        "predicted_return": -0.5636202096939087,
+        "actual_return": -1.0356146097183228
+    },
+    {
+        "date": "2023-08-11",
+        "price": 4464.05,
+        "predicted_return": -0.13489393889904022,
+        "actual_return": -5.266926288604736
+    },
+    {
+        "date": "2023-08-14",
+        "price": 4489.72,
+        "predicted_return": -0.3256298005580902,
+        "actual_return": -6.37598991394043
+    },
+    {
+        "date": "2023-08-15",
+        "price": 4437.86,
+        "predicted_return": -0.40157052874565125,
+        "actual_return": -3.0087056159973145
+    },
+    {
+        "date": "2023-08-16",
+        "price": 4404.33,
+        "predicted_return": 4.650409698486328,
+        "actual_return": -0.3458966910839081
+    },
+    {
+        "date": "2023-08-17",
+        "price": 4370.36,
+        "predicted_return": -0.9550305604934692,
+        "actual_return": 0.02083674445748329
+    },
+    {
+        "date": "2023-08-18",
+        "price": 4369.71,
+        "predicted_return": 9.679104804992676,
+        "actual_return": -0.9807168245315552
+    },
+    {
+        "date": "2023-08-21",
+        "price": 4399.77,
+        "predicted_return": -1.5337246656417847,
+        "actual_return": -47.25318145751953
+    },
+    {
+        "date": "2023-08-22",
+        "price": 4387.55,
+        "predicted_return": -1.5140358209609985,
+        "actual_return": -1.4037437438964844
+    },
+    {
+        "date": "2023-08-23",
+        "price": 4436.01,
+        "predicted_return": 3.6007132530212402,
+        "actual_return": -4.976672649383545
+    },
+    {
+        "date": "2023-08-24",
+        "price": 4376.31,
+        "predicted_return": -1.2556692361831665,
+        "actual_return": -2.2184860706329346
+    },
+    {
+        "date": "2023-08-25",
+        "price": 4405.71,
+        "predicted_return": -7.902035713195801,
+        "actual_return": -1.499179482460022
+    },
+    {
+        "date": "2023-08-28",
+        "price": 4433.31,
+        "predicted_return": -1.6355228424072266,
+        "actual_return": -0.06748795509338379
+    },
+    {
+        "date": "2023-08-29",
+        "price": 4497.63,
+        "predicted_return": -1.7457001209259033,
+        "actual_return": 1.315927267074585
+    },
+    {
+        "date": "2023-08-30",
+        "price": 4514.87,
+        "predicted_return": -1.4811853170394897,
+        "actual_return": -0.7357988953590393
+    },
+    {
+        "date": "2023-08-31",
+        "price": 4507.66,
+        "predicted_return": -3.1817731857299805,
+        "actual_return": -1.4166165590286255
+    },
+    {
+        "date": "2023-09-01",
+        "price": 4515.77,
+        "predicted_return": -0.7386051416397095,
+        "actual_return": -2.126627206802368
+    },
+    {
+        "date": "2023-09-05",
+        "price": 4496.83,
+        "predicted_return": -1.7165879011154175,
+        "actual_return": -3.33120059967041
+    },
+    {
+        "date": "2023-09-06",
+        "price": 4465.48,
+        "predicted_return": -2.4827632904052734,
+        "actual_return": 0.6621960401535034
+    },
+    {
+        "date": "2023-09-07",
+        "price": 4451.14,
+        "predicted_return": 0.22604668140411377,
+        "actual_return": -0.5393733382225037
+    },
+    {
+        "date": "2023-09-08",
+        "price": 4457.49,
+        "predicted_return": 0.6356296539306641,
+        "actual_return": -1.4442417621612549
+    },
+    {
+        "date": "2023-09-11",
+        "price": 4487.46,
+        "predicted_return": -0.5050948858261108,
+        "actual_return": 3.712984561920166
+    },
+    {
+        "date": "2023-09-12",
+        "price": 4461.9,
+        "predicted_return": 0.23599927127361298,
+        "actual_return": -1.8471587896347046
+    },
+    {
+        "date": "2023-09-13",
+        "price": 4467.44,
+        "predicted_return": 3.7101502418518066,
+        "actual_return": -1.2179851531982422
+    },
+    {
+        "date": "2023-09-14",
+        "price": 4505.1,
+        "predicted_return": -0.8003143668174744,
+        "actual_return": 5.789441108703613
+    },
+    {
+        "date": "2023-09-15",
+        "price": 4450.32,
+        "predicted_return": -0.21166561543941498,
+        "actual_return": -2.442434310913086
+    },
+    {
+        "date": "2023-09-18",
+        "price": 4453.53,
+        "predicted_return": 5.073090553283691,
+        "actual_return": -1.0593187808990479
+    },
+    {
+        "date": "2023-09-19",
+        "price": 4443.95,
+        "predicted_return": -1.015438437461853,
+        "actual_return": -3.9823055267333984
+    },
+    {
+        "date": "2023-09-20",
+        "price": 4402.2,
+        "predicted_return": -38.49094772338867,
+        "actual_return": 3.3674185276031494
+    },
+    {
+        "date": "2023-09-21",
+        "price": 4330.0,
+        "predicted_return": -0.6244176626205444,
+        "actual_return": 0.7457428574562073
+    },
+    {
+        "date": "2023-09-22",
+        "price": 4320.06,
+        "predicted_return": 2.9206626415252686,
+        "actual_return": -0.8600307703018188
+    },
+    {
+        "date": "2023-09-25",
+        "price": 4337.44,
+        "predicted_return": -0.9839503169059753,
+        "actual_return": -2.7525064945220947
+    },
+    {
+        "date": "2023-09-26",
+        "price": 4273.53,
+        "predicted_return": 18.70793342590332,
+        "actual_return": -4.662483215332031
+    },
+    {
+        "date": "2023-09-27",
+        "price": 4274.51,
+        "predicted_return": 2.070805549621582,
+        "actual_return": -1.0155630111694336
+    },
+    {
+        "date": "2023-09-28",
+        "price": 4299.7,
+        "predicted_return": -1.1704202890396118,
+        "actual_return": 24.698680877685547
+    },
+    {
+        "date": "2023-09-29",
+        "price": 4288.05,
+        "predicted_return": -3.2232840061187744,
+        "actual_return": -1.4597764015197754
+    },
+    {
+        "date": "2023-10-02",
+        "price": 4288.39,
+        "predicted_return": -0.3375091850757599,
+        "actual_return": -1.0292634963989258
+    },
+    {
+        "date": "2023-10-03",
+        "price": 4229.45,
+        "predicted_return": -1.2683756351470947,
+        "actual_return": -174.34156799316406
+    },
+    {
+        "date": "2023-10-04",
+        "price": 4263.75,
+        "predicted_return": -14.091096878051758,
+        "actual_return": -1.5900566577911377
+    },
+    {
+        "date": "2023-10-05",
+        "price": 4258.19,
+        "predicted_return": -2.5845963954925537,
+        "actual_return": -1.1607952117919922
+    },
+    {
+        "date": "2023-10-06",
+        "price": 4308.5,
+        "predicted_return": -1.3821271657943726,
+        "actual_return": -10.060380935668945
+    },
+    {
+        "date": "2023-10-09",
+        "price": 4335.66,
+        "predicted_return": -2.5696964263916016,
+        "actual_return": -0.4664521813392639
+    },
+    {
+        "date": "2023-10-10",
+        "price": 4358.24,
+        "predicted_return": -1.9770175218582153,
+        "actual_return": -0.1738365739583969
+    },
+    {
+        "date": "2023-10-11",
+        "price": 4376.95,
+        "predicted_return": -1.1456252336502075,
+        "actual_return": -0.17568476498126984
+    },
+    {
+        "date": "2023-10-12",
+        "price": 4349.61,
+        "predicted_return": -1.76802659034729,
+        "actual_return": -2.4550085067749023
+    },
+    {
+        "date": "2023-10-13",
+        "price": 4327.78,
+        "predicted_return": 4.763659954071045,
+        "actual_return": -0.19651873409748077
+    },
+    {
+        "date": "2023-10-16",
+        "price": 4373.63,
+        "predicted_return": -1.3318034410476685,
+        "actual_return": -3.110917568206787
+    },
+    {
+        "date": "2023-10-17",
+        "price": 4373.2,
+        "predicted_return": 2.094897985458374,
+        "actual_return": -1.0092802047729492
+    },
+    {
+        "date": "2023-10-18",
+        "price": 4314.6,
+        "predicted_return": -2.4392058849334717,
+        "actual_return": 135.29061889648438
+    },
+    {
+        "date": "2023-10-19",
+        "price": 4278.0,
+        "predicted_return": 0.1800386905670166,
+        "actual_return": -0.36694374680519104
+    },
+    {
+        "date": "2023-10-20",
+        "price": 4224.16,
+        "predicted_return": -0.5275998115539551,
+        "actual_return": 0.4836238622665405
+    },
+    {
+        "date": "2023-10-23",
+        "price": 4217.04,
+        "predicted_return": 0.600593626499176,
+        "actual_return": -0.8660706281661987
+    },
+    {
+        "date": "2023-10-24",
+        "price": 4247.68,
+        "predicted_return": -0.759592592716217,
+        "actual_return": -5.310630798339844
+    },
+    {
+        "date": "2023-10-25",
+        "price": 4186.77,
+        "predicted_return": 1.8081167936325073,
+        "actual_return": -2.9735846519470215
+    },
+    {
+        "date": "2023-10-26",
+        "price": 4137.23,
+        "predicted_return": 2.3639283180236816,
+        "actual_return": -0.1748369038105011
+    },
+    {
+        "date": "2023-10-27",
+        "price": 4117.37,
+        "predicted_return": -0.8287774324417114,
+        "actual_return": -0.5943108201026917
+    },
+    {
+        "date": "2023-10-30",
+        "price": 4166.82,
+        "predicted_return": -0.8939104676246643,
+        "actual_return": -3.5019338130950928
+    },
+    {
+        "date": "2023-10-31",
+        "price": 4193.8,
+        "predicted_return": -30.432918548583984,
+        "actual_return": -0.46087324619293213
+    },
+    {
+        "date": "2023-11-01",
+        "price": 4237.86,
+        "predicted_return": -1.6138392686843872,
+        "actual_return": 0.6225550770759583
+    },
+    {
+        "date": "2023-11-02",
+        "price": 4317.78,
+        "predicted_return": -1.1670430898666382,
+        "actual_return": 0.7950326800346375
+    },
+    {
+        "date": "2023-11-03",
+        "price": 4358.34,
+        "predicted_return": -23.900550842285156,
+        "actual_return": -0.5018864870071411
+    },
+    {
+        "date": "2023-11-06",
+        "price": 4365.98,
+        "predicted_return": 0.38366788625717163,
+        "actual_return": -0.8133910298347473
+    },
+    {
+        "date": "2023-11-07",
+        "price": 4378.38,
+        "predicted_return": -0.1711948812007904,
+        "actual_return": 0.6202051043510437
+    },
+    {
+        "date": "2023-11-08",
+        "price": 4382.78,
+        "predicted_return": -0.03702184930443764,
+        "actual_return": -0.64616459608078
+    },
+    {
+        "date": "2023-11-09",
+        "price": 4347.35,
+        "predicted_return": -0.030290400609374046,
+        "actual_return": -9.044157028198242
+    },
+    {
+        "date": "2023-11-10",
+        "price": 4415.24,
+        "predicted_return": -0.008773896843194962,
+        "actual_return": -2.931788206100464
+    },
+    {
+        "date": "2023-11-13",
+        "price": 4411.55,
+        "predicted_return": -0.9003893136978149,
+        "actual_return": -1.0535176992416382
+    },
+    {
+        "date": "2023-11-14",
+        "price": 4495.7,
+        "predicted_return": 12.638497352600098,
+        "actual_return": -23.823619842529297
+    },
+    {
+        "date": "2023-11-15",
+        "price": 4502.88,
+        "predicted_return": -0.7270014882087708,
+        "actual_return": -0.9162731170654297
+    },
+    {
+        "date": "2023-11-16",
+        "price": 4508.24,
+        "predicted_return": 2.51469087600708,
+        "actual_return": -0.254677951335907
+    },
+    {
+        "date": "2023-11-17",
+        "price": 4514.02,
+        "predicted_return": -0.15693293511867523,
+        "actual_return": 0.07708196341991425
+    },
+    {
+        "date": "2023-11-20",
+        "price": 4547.38,
+        "predicted_return": -0.29243186116218567,
+        "actual_return": 4.764237403869629
+    },
+    {
+        "date": "2023-11-21",
+        "price": 4538.19,
+        "predicted_return": 0.034259114414453506,
+        "actual_return": -1.2734602689743042
+    },
+    {
+        "date": "2023-11-22",
+        "price": 4556.62,
+        "predicted_return": 0.26079821586608887,
+        "actual_return": -3.009493112564087
+    },
+    {
+        "date": "2023-11-24",
+        "price": 4559.34,
+        "predicted_return": -0.355710506439209,
+        "actual_return": -0.8530136346817017
+    },
+    {
+        "date": "2023-11-27",
+        "price": 4550.43,
+        "predicted_return": 0.4236468970775604,
+        "actual_return": -4.273820877075195
+    },
+    {
+        "date": "2023-11-28",
+        "price": 4554.89,
+        "predicted_return": 0.2482490837574005,
+        "actual_return": -1.50153648853302
+    },
+    {
+        "date": "2023-11-29",
+        "price": 4550.58,
+        "predicted_return": -0.1798369586467743,
+        "actual_return": -1.9654425382614136
+    },
+    {
+        "date": "2023-11-30",
+        "price": 4567.8,
+        "predicted_return": 0.3647433817386627,
+        "actual_return": -4.999094486236572
+    },
+    {
+        "date": "2023-12-01",
+        "price": 4594.63,
+        "predicted_return": -0.10320638120174408,
+        "actual_return": 0.5521966218948364
+    },
+    {
+        "date": "2023-12-04",
+        "price": 4569.78,
+        "predicted_return": -0.0918113961815834,
+        "actual_return": -1.9207959175109863
+    },
+    {
+        "date": "2023-12-05",
+        "price": 4567.18,
+        "predicted_return": 0.4381285011768341,
+        "actual_return": -0.8948031067848206
+    },
+    {
+        "date": "2023-12-06",
+        "price": 4549.34,
+        "predicted_return": -0.3750828504562378,
+        "actual_return": 5.865434169769287
+    },
+    {
+        "date": "2023-12-07",
+        "price": 4585.59,
+        "predicted_return": 0.3778456151485443,
+        "actual_return": -3.0399181842803955
+    },
+    {
+        "date": "2023-12-08",
+        "price": 4604.37,
+        "predicted_return": -0.34789174795150757,
+        "actual_return": -0.48602768778800964
+    },
+    {
+        "date": "2023-12-11",
+        "price": 4622.44,
+        "predicted_return": 0.5561879277229309,
+        "actual_return": -0.04172980785369873
+    },
+    {
+        "date": "2023-12-12",
+        "price": 4643.7,
+        "predicted_return": -0.14798276126384735,
+        "actual_return": 0.17193838953971863
+    },
+    {
+        "date": "2023-12-13",
+        "price": 4707.09,
+        "predicted_return": 0.1260918825864792,
+        "actual_return": 1.9680030345916748
+    },
+    {
+        "date": "2023-12-14",
+        "price": 4719.55,
+        "predicted_return": -0.20766383409500122,
+        "actual_return": -0.8060858845710754
+    },
+    {
+        "date": "2023-12-15",
+        "price": 4719.19,
+        "predicted_return": 0.37232524156570435,
+        "actual_return": -1.02881920337677
+    },
+    {
+        "date": "2023-12-18",
+        "price": 4740.56,
+        "predicted_return": -0.1404889076948166,
+        "actual_return": -60.35931396484375
+    },
+    {
+        "date": "2023-12-19",
+        "price": 4768.37,
+        "predicted_return": -0.19383753836154938,
+        "actual_return": 0.2954917848110199
+    },
+    {
+        "date": "2023-12-20",
+        "price": 4698.35,
+        "predicted_return": 0.054742809385061264,
+        "actual_return": -3.5031166076660156
+    },
+    {
+        "date": "2023-12-21",
+        "price": 4746.75,
+        "predicted_return": 0.5411875247955322,
+        "actual_return": -1.7015321254730225
+    },
+    {
+        "date": "2023-12-22",
+        "price": 4754.63,
+        "predicted_return": -0.708041787147522,
+        "actual_return": -0.8388498425483704
+    },
+    {
+        "date": "2023-12-26",
+        "price": 4774.75,
+        "predicted_return": 2.393620014190674,
+        "actual_return": 1.5490612983703613
+    },
+    {
+        "date": "2023-12-27",
+        "price": 4781.58,
+        "predicted_return": -0.3699241578578949,
+        "actual_return": -0.6619679927825928
+    },
+    {
+        "date": "2023-12-28",
+        "price": 4783.35,
+        "predicted_return": 0.3155611455440521,
+        "actual_return": -0.741215705871582
+    },
+    {
+        "date": "2023-12-29",
+        "price": 4769.83,
+        "predicted_return": 0.06102648377418518,
+        "actual_return": -8.635536193847656
+    },
+    {
+        "date": "2024-01-02",
+        "price": 4742.83,
+        "predicted_return": -0.07995819300413132,
+        "actual_return": 1.0026966333389282
+    },
+    {
+        "date": "2024-01-03",
+        "price": 4704.81,
+        "predicted_return": 0.042426567524671555,
+        "actual_return": 0.41616398096084595
+    },
+    {
+        "date": "2024-01-04",
+        "price": 4688.68,
+        "predicted_return": 0.09807940572500229,
+        "actual_return": -0.5723214745521545
+    },
+    {
+        "date": "2024-01-05",
+        "price": 4697.24,
+        "predicted_return": -0.08684764057397842,
+        "actual_return": -1.532514214515686
+    },
+    {
+        "date": "2024-01-08",
+        "price": 4763.54,
+        "predicted_return": -0.1461486965417862,
+        "actual_return": 6.731200695037842
+    },
+    {
+        "date": "2024-01-09",
+        "price": 4756.5,
+        "predicted_return": -0.16948652267456055,
+        "actual_return": -1.1047065258026123
+    },
+    {
+        "date": "2024-01-10",
+        "price": 4783.45,
+        "predicted_return": 0.916543185710907,
+        "actual_return": -4.833776950836182
+    },
+    {
+        "date": "2024-01-11",
+        "price": 4780.24,
+        "predicted_return": -0.2831410765647888,
+        "actual_return": -1.118438959121704
+    },
+    {
+        "date": "2024-01-12",
+        "price": 4783.83,
+        "predicted_return": 0.31878864765167236,
+        "actual_return": -2.119119882583618
+    },
+    {
+        "date": "2024-01-16",
+        "price": 4765.98,
+        "predicted_return": -0.2473977953195572,
+        "actual_return": -5.968441963195801
+    },
+    {
+        "date": "2024-01-17",
+        "price": 4739.21,
+        "predicted_return": 0.1161893978714943,
+        "actual_return": 0.505336344242096
+    },
+    {
+        "date": "2024-01-18",
+        "price": 4780.94,
+        "predicted_return": -0.05111037194728851,
+        "actual_return": -2.5676403045654297
+    },
+    {
+        "date": "2024-01-19",
+        "price": 4839.81,
+        "predicted_return": -0.3334481120109558,
+        "actual_return": 0.39842379093170166
+    },
+    {
+        "date": "2024-01-22",
+        "price": 4850.43,
+        "predicted_return": 0.3284233510494232,
+        "actual_return": -0.8217976093292236
+    },
+    {
+        "date": "2024-01-23",
+        "price": 4864.6,
+        "predicted_return": 0.2327028512954712,
+        "actual_return": 0.3313537836074829
+    },
+    {
+        "date": "2024-01-24",
+        "price": 4868.55,
+        "predicted_return": -0.017816325649619102,
+        "actual_return": -0.7220563292503357
+    },
+    {
+        "date": "2024-01-25",
+        "price": 4894.16,
+        "predicted_return": -0.012396748177707195,
+        "actual_return": 5.478354454040527
+    },
+    {
+        "date": "2024-01-26",
+        "price": 4890.97,
+        "predicted_return": -0.22746914625167847,
+        "actual_return": -1.1239093542099
+    },
+    {
+        "date": "2024-01-29",
+        "price": 4927.93,
+        "predicted_return": 0.15825606882572174,
+        "actual_return": -12.593727111816406
+    },
+    {
+        "date": "2024-01-30",
+        "price": 4924.97,
+        "predicted_return": -0.2807142436504364,
+        "actual_return": -1.0794869661331177
+    },
+    {
+        "date": "2024-01-31",
+        "price": 4845.65,
+        "predicted_return": 0.48245134949684143,
+        "actual_return": 25.81304931640625
+    },
+    {
+        "date": "2024-02-01",
+        "price": 4906.19,
+        "predicted_return": 0.19866840541362762,
+        "actual_return": -1.7757306098937988
+    },
+    {
+        "date": "2024-02-02",
+        "price": 4958.61,
+        "predicted_return": -0.6440191864967346,
+        "actual_return": -0.14481128752231598
+    },
+    {
+        "date": "2024-02-05",
+        "price": 4942.81,
+        "predicted_return": 1.6204652786254883,
+        "actual_return": -1.2982255220413208
+    },
+    {
+        "date": "2024-02-06",
+        "price": 4954.23,
+        "predicted_return": -0.08522221446037292,
+        "actual_return": -1.725092887878418
+    },
+    {
+        "date": "2024-02-07",
+        "price": 4995.06,
+        "predicted_return": 0.8765643835067749,
+        "actual_return": 2.56708025932312
+    },
+    {
+        "date": "2024-02-08",
+        "price": 4997.91,
+        "predicted_return": -0.06615077704191208,
+        "actual_return": -0.9307705760002136
+    },
+    {
+        "date": "2024-02-09",
+        "price": 5026.61,
+        "predicted_return": 0.12708374857902527,
+        "actual_return": 9.064665794372559
+    },
+    {
+        "date": "2024-02-12",
+        "price": 5021.84,
+        "predicted_return": -0.10255791991949081,
+        "actual_return": -1.1652545928955078
+    },
+    {
+        "date": "2024-02-13",
+        "price": 4953.17,
+        "predicted_return": 0.11234795302152634,
+        "actual_return": 13.40977668762207
+    },
+    {
+        "date": "2024-02-14",
+        "price": 5000.62,
+        "predicted_return": 0.07572553306818008,
+        "actual_return": -1.700564980506897
+    },
+    {
+        "date": "2024-02-15",
+        "price": 5029.73,
+        "predicted_return": -0.3009321987628937,
+        "actual_return": -0.39233359694480896
+    },
+    {
+        "date": "2024-02-16",
+        "price": 5005.57,
+        "predicted_return": 0.40673309564590454,
+        "actual_return": -1.825153112411499
+    },
+    {
+        "date": "2024-02-20",
+        "price": 4975.51,
+        "predicted_return": 0.01366637833416462,
+        "actual_return": 0.25021132826805115
+    },
+    {
+        "date": "2024-02-21",
+        "price": 4981.8,
+        "predicted_return": -0.038072291761636734,
+        "actual_return": -1.2105108499526978
+    },
+    {
+        "date": "2024-02-22",
+        "price": 5087.03,
+        "predicted_return": -0.10908932983875275,
+        "actual_return": 15.708703994750977
+    },
+    {
+        "date": "2024-02-23",
+        "price": 5088.8,
+        "predicted_return": -0.04406890273094177,
+        "actual_return": -0.9835280776023865
+    },
+    {
+        "date": "2024-02-26",
+        "price": 5069.53,
+        "predicted_return": 0.3057829737663269,
+        "actual_return": -11.883487701416016
+    },
+    {
+        "date": "2024-02-27",
+        "price": 5078.18,
+        "predicted_return": -0.11049161851406097,
+        "actual_return": -1.4505890607833862
+    },
+    {
+        "date": "2024-02-28",
+        "price": 5069.76,
+        "predicted_return": -0.08784610778093338,
+        "actual_return": -1.9717568159103394
+    },
+    {
+        "date": "2024-02-29",
+        "price": 5096.27,
+        "predicted_return": 0.0180833637714386,
+        "actual_return": -4.153682708740234
+    },
+    {
+        "date": "2024-03-01",
+        "price": 5137.08,
+        "predicted_return": -0.011394870467483997,
+        "actual_return": 0.5314107537269592
+    },
+    {
+        "date": "2024-03-04",
+        "price": 5130.95,
+        "predicted_return": 0.0908324271440506,
+        "actual_return": -1.1490161418914795
+    }
+]

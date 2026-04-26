@@ -82,10 +82,10 @@ def get_dataset_info():
                 'file': 'sp500_with_indicators_llm.csv',
                 'description': 'Standard & Poor\'s 500 Index with calculated indicators and Finbert derived news sentiment',
                 'period': '2015-03-06 to 2024-03-04',
-                'features': 27
+                'features': 30
             },
         ],
-        'total_features': 27,
+        'total_features': 30,
         'time_period': '2015-03-06 to 2024-03-04',
         'paper_title': 'SAMBA-FinBERT: Leveraging News Sentiment as a Feature for Financial Forecasting',
         'conference': '',
