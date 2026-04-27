@@ -205,16 +205,22 @@ def main():
     mae, rmse, ic, ric, y_p, y_t = calculate_metrics_for_dataset(trainer, test_loader, mmn)
 
     # Save JSON Results
-    y_p_np, y_t_np = y_p.cpu().numpy(), y_t.cpu().numpy()
-    pred_returns = (y_p_np[1:] - y_p_np[:-1]) / y_p_np[:-1]
-    true_returns = (y_t_np[1:] - y_t_np[:-1]) / y_t_np[:-1]
+    # Flatten the arrays so they are simple 1D lists of returns
+    pred_returns = y_p.cpu().numpy().flatten()
+    true_returns = y_t.cpu().numpy().flatten()
     
     df_raw = pd.read_csv(dataset_file)
     num_pts = len(pred_returns)
-    records = [{"date": d, "price": float(pr), "predicted_return": float(p[0]), "actual_return": float(t[0])} 
-               for d, pr, p, t in zip(df_raw["Date"].iloc[-num_pts:].tolist(), df_raw["Price"].iloc[-num_pts:].tolist(), pred_returns.tolist(), true_returns.tolist())]
+    
+    # Notice we removed the p[0] and t[0] indexing because the arrays are already flattened
+    records = [{"date": d, "price": float(pr), "predicted_return": float(p), "actual_return": float(t)} 
+               for d, pr, p, t in zip(df_raw["Date"].iloc[-num_pts:].tolist(), 
+                                      df_raw["Price"].iloc[-num_pts:].tolist(), 
+                                      pred_returns.tolist(), 
+                                      true_returns.tolist())]
 
-    with open(json_path, "w") as jf: json.dump(records, jf, indent=4)
+    with open(json_path, "w") as jf: 
+        json.dump(records, jf, indent=4)
 
     # Save Text Results
     with open(txt_path, "a") as f:
