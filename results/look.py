@@ -1,6 +1,7 @@
 import os
 import glob
 import pandas as pd
+import numpy as np
 
 def parse_metrics_line(line):
     """Extracts MAE, RMSE, IC, and RIC from a given output line."""
@@ -12,10 +13,10 @@ def parse_metrics_line(line):
         metrics = {}
         for part in parts:
             key, value = part.split(":")
-            metrics[key.strip()] = value.strip()
+            metrics[key.strip()] = float(value.strip()) # Cast to float for easier aggregation later
         return metrics
     except Exception:
-        return {"MAE": "N/A", "RMSE": "N/A", "IC": "N/A", "RIC": "N/A"}
+        return {"MAE": np.nan, "RMSE": np.nan, "IC": np.nan, "RIC": np.nan}
 
 def analyze_results(results_dir="results"):
     # Find all .txt files
@@ -38,7 +39,6 @@ def analyze_results(results_dir="results"):
         
         # Extract Model, Dataset, and Seed from the filename
         # Expected format: results_{model}_{dataset_name}_{seed}.txt
-        # Example: results_samba_sp500_with_indicators_llm_1.txt
         clean_name = filename.replace("results_", "").replace(".txt", "")
         parts = clean_name.split("_")
         
@@ -46,6 +46,13 @@ def analyze_results(results_dir="results"):
             model_name = parts[0].upper()
             seed = parts[-1]
             dataset_name = "_".join(parts[1:-1])
+            
+            # Make the dataset name prettier for the table
+            if "llm" in dataset_name.lower():
+                dataset_name = "S&P 500 (w/ Sentiment)"
+            else:
+                dataset_name = "S&P 500 (Base)"
+                
         except IndexError:
             model_name, dataset_name, seed = "Unknown", "Unknown", "Unknown"
 
@@ -78,32 +85,59 @@ def analyze_results(results_dir="results"):
     if all_data:
         df = pd.DataFrame(all_data)
         
-        # Ensure columns are in a logical order (in case some files missed a line)
         cols = ["Model", "Dataset", "Seed", 
                 "Train_MAE", "Train_RMSE", "Train_IC", "Train_RIC",
                 "Val_MAE", "Val_RMSE", "Val_IC", "Val_RIC",
                 "Test_MAE", "Test_RMSE", "Test_IC", "Test_RIC"]
         
-        # Only keep columns that actually exist in the dataframe to prevent errors
         cols = [c for c in cols if c in df.columns]
         df = df[cols]
 
-        # Print to terminal
-        print("\n" + "=" * 120)
-        print(" " * 45 + "EXPERIMENT RESULTS SUMMARY")
-        print("=" * 120)
+        # ----------------------------------------------------
+        # AGGREGATION LOGIC (Averaging across the 5 seeds)
+        # ----------------------------------------------------
+        # Group by Model and Dataset, then calculate the mean and standard deviation for the test metrics
+        agg_df = df.groupby(["Model", "Dataset"]).agg({
+            "Test_MAE": ['mean', 'std'],
+            "Test_RMSE": ['mean', 'std'],
+            "Test_IC": ['mean', 'std'],
+            "Test_RIC": ['mean', 'std']
+        }).reset_index()
         
-        # Set pandas display options so it doesn't wrap awkwardly in the terminal
+        # Flatten the multi-level columns created by the aggregation
+        agg_df.columns = ['_'.join(col).strip('_') for col in agg_df.columns.values]
+
+        # Formatting to 4 decimal places for the table
+        format_mapping = {col: '{:.4f}' for col in agg_df.columns if 'mean' in col or 'std' in col}
+        for col, fmt in format_mapping.items():
+            agg_df[col] = agg_df[col].apply(lambda x: fmt.format(x) if pd.notnull(x) else "NaN")
+
+
+        # Print Raw Runs to terminal
         pd.set_option('display.max_columns', None)
         pd.set_option('display.width', 200)
+        
+        print("\n" + "=" * 120)
+        print(" " * 45 + "RAW EXPERIMENT RESULTS (ALL SEEDS)")
+        print("=" * 120)
         print(df.to_string(index=False))
+        
+        print("\n" + "=" * 120)
+        print(" " * 40 + "AGGREGATED TEST RESULTS (MEAN ± STD)")
+        print("=" * 120)
+        print(agg_df.to_string(index=False))
         print("=" * 120)
         
-        # Save to CSV for the user's paper
-        output_csv = "final_summary_metrics.csv"
-        df.to_csv(output_csv, index=False)
+        # Save to CSVs
+        raw_csv = "final_raw_metrics.csv"
+        agg_csv = "final_aggregated_metrics.csv"
+        
+        df.to_csv(raw_csv, index=False)
+        agg_df.to_csv(agg_csv, index=False)
+        
         print(f"\n✅ Successfully extracted {len(txt_files)} files.")
-        print(f"✅ Data has been saved to '{output_csv}' so you can easily copy it into Excel or Word!")
+        print(f"✅ Raw Data saved to '{raw_csv}'")
+        print(f"✅ Aggregated averages saved to '{agg_csv}'")
 
 if __name__ == "__main__":
     analyze_results()

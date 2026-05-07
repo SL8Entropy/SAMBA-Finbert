@@ -71,6 +71,8 @@ Run the preprocessing script to tokenize news and generate daily sentiment score
 python scripts/preprocess_finbert.py --input data/raw_news.csv --output data/sentiment_scores.csv
 ```
 
+Here is the updated section for your README to include the two new models:
+
 ### 2. Training and Testing
 
 To train and evaluate the models on your dataset:
@@ -81,7 +83,7 @@ python main.py --model samba --dataset "Dataset/sp500_with_indicators.csv" --num
 
 **Arguments:**
 
-* `--model`: Choose which model to train: `samba` (proposed model) or `lstm` (baseline). Default is `samba`.
+* `--model`: Choose which model to train: `samba` (proposed model), `lstm` (baseline), `mambastock` (pure Mamba baseline), or `dlinear` (simple linear baseline). Default is `samba`.
 * `--dataset`: The file path to your target dataset CSV (e.g., `Dataset/sp500_with_indicators.csv`). 
 * `--num_features`: The number of input parameters/features in your dataset. If not provided, it will attempt to default to the dataset's configuration.
 * `--seed`: Random seed for reproducibility. Overrides the default seed in the configuration file.
@@ -136,6 +138,8 @@ SAMBA-FINBERT/
 |   |   graph_layers.py
 |   |   lstm.py
 |   |   mamba.py
+|   |   mambaStock.py
+|   |   DLinear.py
 |   |   mamba_block.py
 |   |   normalization.py
 |   |   samba.py
@@ -152,89 +156,7 @@ SAMBA-FINBERT/
 |
 +---results
 |       create_graphs.py
-|       final_summary_metrics.csv
 |       look.py
-|       results_lstm_sp500_with_indicators_1.json
-|       results_lstm_sp500_with_indicators_1.png
-|       results_lstm_sp500_with_indicators_1.txt
-|       results_lstm_sp500_with_indicators_1_shap_summary.png
-|       results_lstm_sp500_with_indicators_2.json
-|       results_lstm_sp500_with_indicators_2.png
-|       results_lstm_sp500_with_indicators_2.txt
-|       results_lstm_sp500_with_indicators_2_shap_summary.png
-|       results_lstm_sp500_with_indicators_3.json
-|       results_lstm_sp500_with_indicators_3.png
-|       results_lstm_sp500_with_indicators_3.txt
-|       results_lstm_sp500_with_indicators_3_shap_summary.png
-|       results_lstm_sp500_with_indicators_4.json
-|       results_lstm_sp500_with_indicators_4.png
-|       results_lstm_sp500_with_indicators_4.txt
-|       results_lstm_sp500_with_indicators_4_shap_summary.png
-|       results_lstm_sp500_with_indicators_5.json
-|       results_lstm_sp500_with_indicators_5.png
-|       results_lstm_sp500_with_indicators_5.txt
-|       results_lstm_sp500_with_indicators_5_shap_summary.png
-|       results_lstm_sp500_with_indicators_llm_1.json
-|       results_lstm_sp500_with_indicators_llm_1.png
-|       results_lstm_sp500_with_indicators_llm_1.txt
-|       results_lstm_sp500_with_indicators_llm_1_shap_summary.png
-|       results_lstm_sp500_with_indicators_llm_2.json
-|       results_lstm_sp500_with_indicators_llm_2.png
-|       results_lstm_sp500_with_indicators_llm_2.txt
-|       results_lstm_sp500_with_indicators_llm_2_shap_summary.png
-|       results_lstm_sp500_with_indicators_llm_3.json
-|       results_lstm_sp500_with_indicators_llm_3.png
-|       results_lstm_sp500_with_indicators_llm_3.txt
-|       results_lstm_sp500_with_indicators_llm_3_shap_summary.png
-|       results_lstm_sp500_with_indicators_llm_4.json
-|       results_lstm_sp500_with_indicators_llm_4.png
-|       results_lstm_sp500_with_indicators_llm_4.txt
-|       results_lstm_sp500_with_indicators_llm_4_shap_summary.png
-|       results_lstm_sp500_with_indicators_llm_5.json
-|       results_lstm_sp500_with_indicators_llm_5.png
-|       results_lstm_sp500_with_indicators_llm_5.txt
-|       results_lstm_sp500_with_indicators_llm_5_shap_summary.png
-|       results_samba_sp500_with_indicators_1.json
-|       results_samba_sp500_with_indicators_1.png
-|       results_samba_sp500_with_indicators_1.txt
-|       results_samba_sp500_with_indicators_1_shap_summary.png
-|       results_samba_sp500_with_indicators_2.json
-|       results_samba_sp500_with_indicators_2.png
-|       results_samba_sp500_with_indicators_2.txt
-|       results_samba_sp500_with_indicators_2_shap_summary.png
-|       results_samba_sp500_with_indicators_3.json
-|       results_samba_sp500_with_indicators_3.png
-|       results_samba_sp500_with_indicators_3.txt
-|       results_samba_sp500_with_indicators_3_shap_summary.png
-|       results_samba_sp500_with_indicators_4.json
-|       results_samba_sp500_with_indicators_4.png
-|       results_samba_sp500_with_indicators_4.txt
-|       results_samba_sp500_with_indicators_4_shap_summary.png
-|       results_samba_sp500_with_indicators_5.json
-|       results_samba_sp500_with_indicators_5.png
-|       results_samba_sp500_with_indicators_5.txt
-|       results_samba_sp500_with_indicators_5_shap_summary.png
-|       results_samba_sp500_with_indicators_llm_1.json
-|       results_samba_sp500_with_indicators_llm_1.png
-|       results_samba_sp500_with_indicators_llm_1.txt
-|       results_samba_sp500_with_indicators_llm_1_shap_summary.png
-|       results_samba_sp500_with_indicators_llm_2.json
-|       results_samba_sp500_with_indicators_llm_2.png
-|       results_samba_sp500_with_indicators_llm_2.txt
-|       results_samba_sp500_with_indicators_llm_2_shap_summary.png
-|       results_samba_sp500_with_indicators_llm_3.json
-|       results_samba_sp500_with_indicators_llm_3.png
-|       results_samba_sp500_with_indicators_llm_3.txt
-|       results_samba_sp500_with_indicators_llm_3_shap_summary.png
-|       results_samba_sp500_with_indicators_llm_4.json
-|       results_samba_sp500_with_indicators_llm_4.png
-|       results_samba_sp500_with_indicators_llm_4.txt
-|       results_samba_sp500_with_indicators_llm_4_shap_summary.png
-|       results_samba_sp500_with_indicators_llm_5.json
-|       results_samba_sp500_with_indicators_llm_5.png
-|       results_samba_sp500_with_indicators_llm_5.txt
-|       results_samba_sp500_with_indicators_llm_5_shap_summary.png
-|
 +---trainer
 |   |   trainer.py
 |   |   __init__.py

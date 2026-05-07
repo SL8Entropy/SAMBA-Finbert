@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Main training script for stock price forecasting models (SAMBA / LSTM)
+Main training script for stock price forecasting models (SAMBA / LSTM / MambaStock / DLinear)
 Includes multi-stage evaluation (Train/Val/Test) and SHAP interpretability.
 """
 
@@ -15,6 +15,12 @@ import numpy as np
 from paper_config import get_paper_config, get_dataset_info
 from models import SAMBA
 from models.lstm import LSTM  
+
+# --- NEW IMPORTS ---
+from models.mambaStock import StockMamba
+from models.DLinear import DLinear       
+# -------------------
+
 from utils import (
     prepare_data, init_seed, print_model_parameters,
     pearson_correlation, rank_information_coefficient, All_Metrics
@@ -137,8 +143,9 @@ def run_shap_analysis(model, train_loader, test_loader, output_dir, file_prefix,
 # -------------------------
 
 def main():
-    parser = argparse.ArgumentParser(description="SAMBA/LSTM Training Script")
-    parser.add_argument('--model', type=str, default='samba', choices=['samba', 'lstm'])
+    parser = argparse.ArgumentParser(description="Time Series Forecasting Script")
+    # --- UPDATED CHOICES ---
+    parser.add_argument('--model', type=str, default='samba', choices=['samba', 'lstm', 'mambastock', 'dlinear'])
     parser.add_argument('--seed', type=int, default=None)
     parser.add_argument('--dataset', type=str, default='Dataset/sp500_with_indicators.csv')
     parser.add_argument('--num_features', type=int, default=None)
@@ -168,11 +175,19 @@ def main():
     args = config.to_dict()
 
     print(f"Initializing {model_choice.upper()}...")
+    
+    # --- UPDATED MODEL SELECTION LOGIC ---
     if model_choice == 'samba':
         model_args.vocab_size = num_features
         model = SAMBA(model_args, args.get('hid'), args.get('lag'), args.get('horizon'), args.get('embed_dim'), args.get("cheb_k"))
+    elif model_choice == 'mambastock':
+        model_args.vocab_size = num_features
+        model = StockMamba(model_args, args.get('hid'))
+    elif model_choice == 'dlinear':
+        model = DLinear(seq_len=args.get('lag'), pred_len=args.get('horizon'), channels=num_features, individual=False)
     else:
         model = LSTM(input_size=num_features, hidden_size=args.get('hid', 64), output_size=args.get('horizon'))
+    # -------------------------------------
     
     model = model.cuda()
     for p in model.parameters():
@@ -244,8 +259,8 @@ def main():
         del df_raw["Target"]
 
     # 3. Target_Return is dynamically generated and placed at the front
-    base_cols = [col for col in df_raw.columns if col != "Target_Return"]
-    feature_names = ["Target_Return"] + base_cols
+    base_cols = [col for col in df_raw.columns if col != "Historical_Return"]
+    feature_names = ["Historical_Return"] + base_cols
 
     # 4. Truncate to the exact model input size just in case
     feature_names = feature_names[:num_features]
